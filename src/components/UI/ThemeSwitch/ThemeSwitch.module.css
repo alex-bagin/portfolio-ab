@@ -1,0 +1,40 @@
+.themeSwitch {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  width: 30px;
+  height: 30px;
+  background: var(--black);
+  color: var(--white);
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.themeSwitch::before {
+  content: "\f186";
+  font-family: fontAwesome;
+}
+
+.dark .themeSwitch::before {
+  content: "\f185";
+  font-family: fontAwesome;
+}
+
+.themeSwitch::after {
+  content: "Switch To Dark Mode";
+  position: absolute;
+  left: 40px;
+  font-size: 0.7em;
+  color: var(--black);
+  white-space: nowrap;
+  font-weight: 300;
+  letter-spacing: 1px;
+  pointer-events: none;
+}
+
+.dark .themeSwitch::after {
+  content: "Switch To Light Mode";
+}
