@@ -9,13 +9,13 @@
 :root {
   --black: #333;
   --black2: #333;
-  --white: #efefef;
-  --white2: #fafafa;
+  --white: #ffffff;
+  --white2: #ffffff;
   --skyblue: #2a7da2;
 }
 
 .dark {
-  --black: #fff;
+  --black: #ffffff;
   --black2: #444;
   --white: #333;
   --white2: #444;
@@ -59,10 +59,6 @@ body {
   left: 0;
   width: 70%;
   border: none;
-  border-left: 1px solid rgba(0, 0, 0, 0.08);
-}
-.dark .navigation ul {
-  border-left: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .navigation ul li {
@@ -71,22 +67,6 @@ body {
   list-style: none;
   margin: -1px;
   padding: 0 10px;
-  border-left: 1px none;
-}
-
-.dark .navigation ul li:hover {
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.navigation ul li:hover {
-  position: relative;
-  padding: 0 10px;
-  border-left: 1px solid rgba(0, 0, 0, 0.5);
-}
-
-.navigation ul li {
-  position: relative;
-  border-left: 1px solid #2196f3;
 }
 
 .navigation ul li a {
@@ -109,8 +89,10 @@ body {
 
 .navigation .link a.active {
   color: #2196f3;
+  text-decoration: underline 2px;
   opacity: 1;
 }
+
 .navigation .link a.pending {
   color: #0d62a7;
 }

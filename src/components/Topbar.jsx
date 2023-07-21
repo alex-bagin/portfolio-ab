@@ -1,6 +1,9 @@
+import { useState } from "react";
 import { toggleMenu } from "../../utils";
 
 const Topbar = () => {
+  const [isMenu, setMenu] = useState(false);
+
   return (
     <div className="topbar">
       <img
@@ -15,7 +18,11 @@ const Topbar = () => {
         <strong>Portfolio</strong>
       </a>
       <div onClick={toggleMenu} className="toggle">
-        <i className="fa fa-solid fa-bars" aria-hidden="true"></i>
+        {!isMenu ? (
+          <i className="fa-solid fa-x" />
+        ) : (
+          <i className="fa fa-solid fa-bars" aria-hidden="true" />
+        )}
       </div>
     </div>
   );

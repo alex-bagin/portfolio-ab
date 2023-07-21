@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import ThemeSwitch from "../ThemeSwitch/ThemeSwitch";
-import { DarkContext } from "../../../context";
+import { DarkContext, MenuContext } from "../../../context";
 import { NavLink } from "react-router-dom";
 
 const links = [
@@ -15,6 +15,13 @@ const links = [
 
 const Navbar = () => {
   const { setIsDark } = useContext(DarkContext);
+  // const { menu, setMenu } = useContext(MenuContext);
+
+  function isNavActiv() {
+    const nav = document.querySelector(".navigation").classList[0];
+    console.log("nav: ", nav);
+  }
+  isNavActiv();
 
   function themeSwitchDark() {
     setIsDark(document.body.classList.toggle("dark"));

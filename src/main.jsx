@@ -11,7 +11,6 @@ import Projects from "./pages/Projects.jsx";
 import Testimonials from "./pages/Testimonials.jsx";
 import Cv from "./pages/Cv/Cv.jsx";
 import Contact from "./pages/Contact.jsx";
-import Copyright from "./components/Copyright.jsx";
 
 const router = createBrowserRouter([
   {
@@ -27,7 +26,6 @@ const router = createBrowserRouter([
       { path: "testimonials", element: <Testimonials /> },
       { path: "cv", element: <Cv /> },
       { path: "contact", element: <Contact /> },
-      { path: "copyright", element: <Copyright /> },
     ],
   },
 ]);

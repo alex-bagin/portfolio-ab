@@ -6,6 +6,13 @@ import MyButton from "./components/UI/button/MyButton";
 import { DarkContext } from "./context";
 import Topbar from "./components/Topbar";
 import Copyright from "./components/Copyright";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Projects from "./pages/Projects";
+import Testimonials from "./pages/Testimonials";
+import Cv from "./pages/Cv/Cv";
+import Contact from "./pages/Contact";
 
 function App() {
   const [isDark, setIsDark] = useState(false);
@@ -15,7 +22,7 @@ function App() {
     if (document.body.classList.contains("dark")) {
       setIsDark(true);
     }
-  }, []);
+  }, [isDark]);
 
   return (
     <DarkContext.Provider
@@ -50,7 +57,13 @@ function App() {
         <Navbar />
         <div className="main">
           <Topbar />
-          <Outlet />
+          <Home />
+          <About />
+          <Services />
+          <Projects />
+          <Testimonials />
+          <Cv />
+          <Contact />
           <Copyright />
         </div>
       </div>
