@@ -1,24 +1,8 @@
-import { useContext } from "react";
+import { Link } from "react-router-dom";
 import MyButton from "../components/UI/button/MyButton";
-import { DarkContext } from "../context";
+import { socialsMdias } from "../../config";
 
-const Home = () => {
-  const { isDark } = useContext(DarkContext);
-  const socialsMdias = [
-    {
-      name: "telegram",
-      link: "",
-      styleClass: "fa fa-brands fa-telegram",
-      hidden: "true",
-    },
-    {
-      name: "mobile",
-      link: "",
-      styleClass: "fa fa-solid fa-mobile-retro",
-      hidden: "true",
-    },
-    { name: "email", link: "", styleClass: "fa fa-envelope", hidden: "true" },
-  ];
+const Home = () => {  
 
   return (
     <section className="banner" id="banner">
@@ -28,15 +12,13 @@ const Home = () => {
         </div>
         <h3>Alex Bagin</h3>
         <p>IT-Systemelektroniker</p>
-
-        <MyButton dark={isDark}>Mein CV</MyButton>
-
+        <MyButton >Mein CV</MyButton>        
         <ul className="socialMedia">
           {socialsMdias.map((socialsMdia) => (
             <li key={socialsMdia.name}>
-              <a href={socialsMdia.link}>
+              <Link to={socialsMdia.link}>
                 <i className={socialsMdia.styleClass} aria-hidden={socialsMdia.hidden}></i>
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

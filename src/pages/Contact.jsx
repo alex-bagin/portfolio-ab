@@ -1,9 +1,6 @@
-import { useContext } from "react";
 import MyButton from "../components/UI/button/MyButton";
-import { DarkContext } from "../context";
 
 const Contact = () => {
-  const { isDark } = useContext(DarkContext);
   return (
     <section className="contact adjust" id="contact">
       <div className="title">
@@ -23,7 +20,7 @@ const Contact = () => {
           <textarea placeholder="Nachricht"></textarea>
         </div>
         <div className="row2">
-          <MyButton dark={isDark} type="submit">
+          <MyButton type="submit">
             Kontaktanfrage senden
           </MyButton>
         </div>

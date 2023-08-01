@@ -1,38 +1,8 @@
-import { useContext } from "react";
-import ThemeSwitch from "../ThemeSwitch/ThemeSwitch";
-import { DarkContext, MenuContext } from "../../../context";
 import { NavLink } from "react-router-dom";
+import { links } from "../../../../config";
 
-const links = [
-  { name: "Home", path: "/home" },
-  { name: "Über mich", path: "/about" },
-  { name: "Dienstleistungen", path: "/services" },
-  { name: "Projekte", path: "/projects" },
-  { name: "Referenzen", path: "/testimonials" },
-  { name: "Lebenslauf", path: "/cv" },
-  { name: "Kontakt", path: "/contact" },
-];
 
 const Navbar = () => {
-  const { setIsDark } = useContext(DarkContext);
-  // const { menu, setMenu } = useContext(MenuContext);
-
-  function isNavActiv() {
-    const nav = document.querySelector(".navigation").classList[0];
-    console.log("nav: ", nav);
-  }
-  isNavActiv();
-
-  function themeSwitchDark() {
-    setIsDark(document.body.classList.toggle("dark"));
-  }
-
-  // const scrollToSection = (elementRef) => {
-  //   window.scrollTo({
-  //     top: elementRef.current.offsetTop,
-  //     behavior: "smooth",
-  //   });
-  // };
 
   return (
     <nav className="navigation">
@@ -50,8 +20,6 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-
-      <ThemeSwitch onClick={themeSwitchDark} />
     </nav>
   );
 };

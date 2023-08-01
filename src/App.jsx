@@ -1,34 +1,19 @@
-import { useEffect, useState } from "react";
-import { Outlet } from "react-router-dom";
+import { useState } from "react";
+import { Link, Outlet } from "react-router-dom";
 import MyModal from "./components/UI/MyModal/MyModal";
-import Navbar from "./components/UI/Navbar/Navbar";
 import MyButton from "./components/UI/button/MyButton";
-import { DarkContext } from "./context";
+import { ThemeContext} from "./context";
 import Topbar from "./components/Topbar";
-import Copyright from "./components/Copyright";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Services from "./pages/Services";
-import Projects from "./pages/Projects";
-import Testimonials from "./pages/Testimonials";
-import Cv from "./pages/Cv/Cv";
-import Contact from "./pages/Contact";
 
 function App() {
-  const [isDark, setIsDark] = useState(false);
+  const [theme, setTheme] = useState(true);
   const [modal, setModal] = useState(true);
 
-  useEffect(() => {
-    if (document.body.classList.contains("dark")) {
-      setIsDark(true);
-    }
-  }, [isDark]);
-
   return (
-    <DarkContext.Provider
+    <ThemeContext.Provider
       value={{
-        isDark,
-        setIsDark,
+        theme,
+        setTheme,
       }}
     >
       <MyModal visible={modal} setVisible={setModal}>
@@ -41,7 +26,8 @@ function App() {
             marginTop: 30,
           }}
         >
-          <MyButton
+          <Link to="home">
+            <MyButton
             style={{
               margin: "0px 15px",
               color: "white",
@@ -51,23 +37,17 @@ function App() {
           >
             Portfolio anschauen
           </MyButton>
+          </Link>
+          
         </div>
       </MyModal>
       <div className="container">
-        <Navbar />
         <div className="main">
-          <Topbar />
-          <Home />
-          <About />
-          <Services />
-          <Projects />
-          <Testimonials />
-          <Cv />
-          <Contact />
-          <Copyright />
+          <Topbar/>
+          <Outlet/>
         </div>
-      </div>
-    </DarkContext.Provider>
+        </div>
+    </ThemeContext.Provider>
   );
 }
 

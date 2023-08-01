@@ -1,7 +1,7 @@
 const Index = () => {
   return (
     <div>
-      <h1>Index</h1>
+      <img src="../../img/Alex Bagin2-min.jpg"/>
     </div>
   );
 };
