@@ -1,9 +1,9 @@
-const Services = () => {
+const Courses = () => {
   return (
-    <div>
-      <section className="services adjust" id="services">
-        <div className="title">
-          <h2>Unsere Dienstleistungen</h2>
+      <section className="services section" id="services">
+        <div className="services__inner container">
+          <div className="title">
+          <h2>Besuchte Kurse</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi veritatis perferendis
             consectetur
@@ -59,9 +59,10 @@ const Services = () => {
             </p>
           </div>
         </div>
-      </section>
-    </div>
+        </div>
+        
+      </section>    
   );
 };
 
-export default Services;
+export default Courses;

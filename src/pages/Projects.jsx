@@ -1,7 +1,8 @@
 const Projects = () => {
   return (
-    <section className="projects adjust" id="projects">
-      <div className="title">
+    <section className="projects section" id="projects">
+      <div className="projects__inner container">
+        <div className="title">
         <h2>Meine letzte Projekte</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi veritatis perferendis
@@ -82,6 +83,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
+      </div>      
     </section>
   );
 };

@@ -3,13 +3,15 @@ import RightSide from "./RightSide/RightSide";
 
 const Cv = () => {
   return (
-    <section className="cv adjust" id="cv">
+    <section className="cv section" id="cv">
       <div className="title">
         <h2>Lebenslauf</h2>
       </div>
-      <div className="container">
-        <LeftSide />
-        <RightSide />
+      <div className="cv__inner container">
+        <div className="cv__container">
+          <LeftSide />
+          <RightSide />
+        </div>
       </div>
     </section>
   );

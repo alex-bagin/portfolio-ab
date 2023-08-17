@@ -1,7 +1,8 @@
-const Testimonials = () => {
+const SkillsDev = () => {
   return (
-    <section className="testimonials adjust" id="testimonials">
-      <div className="title">
+    <section className="skills-dev section" id="skills-dev">
+      <div className="skills-dev__inner container">
+        <div className="title">
         <h2>Testimonials</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi veritatis perferendis
@@ -66,8 +67,10 @@ const Testimonials = () => {
           </h4>
         </div>
       </div>
+      </div>
+      
     </section>
   );
 };
 
-export default Testimonials;
+export default SkillsDev;

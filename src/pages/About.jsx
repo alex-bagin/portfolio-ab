@@ -1,7 +1,8 @@
 const About = () => {
   return (
-    <section className="about adjust" id="about">
-      <div className="title">
+    <section className="about section" id="about">
+      <div className="about__inner container">
+        <div className="title">
         <h2>Über mich</h2>
       </div>
       <div className="content">
@@ -96,6 +97,8 @@ const About = () => {
         <div className="imgBx">
           <img src="./img/Alex Bagin1-min.jpg" alt="Alex Bagin" />
         </div>
+      </div>
+      
       </div>
     </section>
   );
