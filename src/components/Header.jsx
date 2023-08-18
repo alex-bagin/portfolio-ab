@@ -4,7 +4,6 @@ import ThemeSwtich from "./UI/ThemeSwitch/ThemeSwitch";
 import { Link, NavLink } from "react-router-dom";
 import { links } from "../../config";
 import MyButton from "./UI/button/MyButton";
-import Switch from "./UI/Switch/Switch";
 
 const Header = () => {
   const $ = window;

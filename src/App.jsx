@@ -9,7 +9,6 @@ import Projects from "./pages/Projects";
 import SkillsDev from "./pages/SkillsDev";
 import Cv from "./pages/Cv/Cv";
 import Contact from "./pages/Contact";
-import { ScrollRestoration, useLocation } from "react-router-dom";
 
 function App() {
   const [theme, setTheme] = useState(true);
@@ -50,13 +49,6 @@ function App() {
           <Copyright />
         </footer>
       </div>
-      <ScrollRestoration
-        getKey={(location, matches) => {
-          console.log(matches[1].pathname);
-          console.log("location.pathname: ", location.pathname);
-          return location.pathname;
-        }}
-      />
     </ThemeContext.Provider>
   );
 }

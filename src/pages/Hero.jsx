@@ -15,6 +15,8 @@ const Hero = () => {
             strings={[
               'Hello! <span class="intro"> My name is  Alex Bagin.</br> I can do some great things for you.</span>',
             ]}
+            stopped={false}
+            showCursor={true}
             typeSpeed={100}
             className="hero__title"
             startDelay={2000}
