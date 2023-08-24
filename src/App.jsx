@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Copyright from "./components/Copyright";
 import Header from "./components/Header";
 import { ThemeContext } from "./context";
 import Hero from "./pages/Hero";
@@ -9,8 +8,11 @@ import Projects from "./pages/Projects";
 import SkillsDev from "./pages/SkillsDev";
 import Cv from "./pages/Cv/Cv";
 import Contact from "./pages/Contact";
+import * as Scroll from "react-scroll";
+import Footer from "./components/Footer";
 
 function App() {
+  const Element = Scroll.Element;
   const [theme, setTheme] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
@@ -36,17 +38,33 @@ function App() {
         <header className={!isScrolled ? "header" : "header is-scrolled"}>
           <Header />
         </header>
-        <main className="main">
-          <Hero />
-          <About />
-          <Courses />
-          <Projects />
-          <SkillsDev />
-          <Cv />
-          <Contact />
+        <main className="content">
+          <div className="content__sections">
+            <Element name="hero">
+              <Hero />
+            </Element>
+            <Element name="about">
+              <About />
+            </Element>
+            <Element name="courses">
+              <Courses />
+            </Element>
+            <Element name="skills">
+              <SkillsDev />
+            </Element>
+            <Element name="projects">
+              <Projects />
+            </Element>
+            <Element name="cv">
+              <Cv />
+            </Element>
+            <Element name="contact">
+              <Contact />
+            </Element>
+          </div>
         </main>
         <footer className="footer">
-          <Copyright />
+          <Footer />
         </footer>
       </div>
     </ThemeContext.Provider>

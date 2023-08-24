@@ -1,3 +1,77 @@
+:root {
+  --c-black: #130f1c;
+  --c-dark: #191820;
+  --c-light: #ececec;
+  --c-white: #fff;
+  --c-accent: #ae8bf8;
+  --c-accent-2: #910091;
+  --c-accent-3: #b45bb4;
+  --c-gray: #f0f0f3;
+  --c-red: #c04040;
+  --c-green: #2c922c;
+  --c-error: var(--c-red);
+  --c-success: var(--c-green);
+  --c-overlay: rgba(0, 0, 0, 0.6);
+  --border-radius: 16px;
+  --border-radius-2: 32px;
+  --border-radius-3: 60px;
+  --border-radius-4: 4px;
+  --box-shadow: -12px -12px 12px hsla(0, 0%, 100%, 0.32), 12px 12px 12px rgba(0, 0, 0, 0.32);
+  --box-shadow-2: -4px -4px 12px hsla(0, 0%, 100%, 0.8), 4px 4px 12px #000;
+  --box-shadow-3: -4px -4px 12px hsla(0, 0%, 100%, 0.05), 4px 4px 12px #000;
+  --box-shadow-41: -4px -4px 12px hsla(0, 0%, 100%, 0.05), 4px 4px 12px #000;
+  --box-shadow-3-transparent: -4px -4px 12px hsla(0, 0%, 100%, 0), 4px 4px 12px transparent;
+  --box-shadow-4: -8px -8px 12px hsla(0, 0%, 100%, 0.8), 8px 8px 12px rgba(0, 0, 0, 0.05);
+  --box-shadow-4-transparent: -8px -8px 12px hsla(0, 0%, 100%, 0), 8px 8px 12px transparent;
+  --box-shadow-5: -4px -4px 12px hsla(0, 0%, 100%, 0.05), 4px 4px 12px var(--c-accent);
+  --box-shadow-6: -4px -4px 12px hsla(0, 0%, 100%, 0.05), 4px 4px 20px rgba(0, 0, 0, 0.25);
+  --box-shadow-inset: inset -22px -14px 14px 2px hsla(0, 0%, 100%, 0.015),
+    inset 8px 4px 20px 12px rgba(0, 0, 0, 0.8);
+  --box-shadow-inset-transparent: inset -22px -14px 14px 2px hsla(0, 0%, 100%, 0),
+    inset 8px 4px 20px 12px transparent;
+  --box-shadow-inset-2: inset -2px -2px 4px hsla(0, 0%, 100%, 0.1),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.5);
+  --box-shadow-inset-2-transparent: inset -2px -2px 4px hsla(0, 0%, 100%, 0),
+    inset 2px 2px 4px transparent;
+  --fancybox-opacity: 1;
+  --fancybox-ts: 0.2s ease;
+  --fancybox-bg: var(--c-overlay);
+  --fancybox-color: var(--c-light);
+  --base-transition-duration: 0.2s;
+  --transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --base-font-family: "Poppins", sans-serif;
+  --base-font-weight: 300;
+  --base-line-height: 1.5;
+  --base-font-size: 16px;
+  --scroll-bar-size: 8px;
+  --siteMaxWidth: 1920px;
+  --siteMinWidth: 360px;
+  --gridWidth: 1220px;
+  --gridPadding: 15px;
+  --section-padding-y: 50px;
+  --inputHeight: 44px;
+  --inputFontSize: 100%;
+  --inputPaddingX: 20px;
+  --inputPaddingY: 0;
+  --inputPadding: var(--inputPaddingY) var(--inputPaddingX);
+  --inputButtonSize: var(--inputHeight);
+  --inputIconSize: 50%;
+  --roundButtonSize: 64px;
+  --focus-outline: 4px dashed var(--focus-outline-color);
+  --focus-outline-color: var(--c-light);
+  --layerDefault: 0;
+  --layerControls: 50;
+  --layerTooltip: 75;
+  --layoutHeader: 80;
+  --layerOverlay: 100;
+  --layerOverlayControls: 150;
+  --layerModal: 200;
+  --layerModalControls: 250;
+  --layerAdmin: 300;
+  --layerAdminControls: 350;
+  --layerPreloader: 10000;
+}
+
 .btn {
   padding: 8px 20px;
   border-radius: 2px;
@@ -22,6 +96,7 @@
   color: var(--c-white);
   padding: 8px 20px;
   border: 1px solid var(--c-accent);
+  font-weight: var(--base-font-weight);
 }
 
 .hidden {
@@ -34,25 +109,24 @@
 
 .btn--small {
   padding: 6px 16px;
-  font-size: 16px;
+  font-size: 14px;
 }
 .btn--medium {
   padding: 8px 20px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .btn--large {
   padding: 12px 26px;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .btn--small:hover,
 .btn--medium:hover,
 .btn--large:hover {
-  background: var(--c-accent);
+  background: var(--c-accent/ 0.5);
   border: 1px solid var(--c-white);
   background: var(--c-accent);
-  color: var(--c-dark);
   border-color: transparent;
-  transition: 0.1s ease-in-out;
+  transition: var(--base-transition-duration) ease-in-out;
 }

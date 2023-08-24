@@ -1,6 +1,7 @@
 import { useState } from "react";
 import MyButton from "../components/UI/button/MyButton";
 import Typed from "react-typed";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const [isType, setIsType] = useState(true);
@@ -9,17 +10,20 @@ const Hero = () => {
     <section className="hero section" id="hero">
       <div className="hero__inner container">
         <div className="hero__body">
-          {/*  Hello! My name is Aleksander Lamkov. I am a frontend developer. I can do some great things for you.  */}
-
+          <Typed
+            strings={[`Hallo! <span class="intro"> mein Name ist  Alex Bagin.`]}
+            showCursor={false}
+            typeSpeed={70}
+            className="hero__title"
+          />
           <Typed
             strings={[
-              'Hello! <span class="intro"> My name is  Alex Bagin.</br> I can do some great things for you.</span>',
+              `<span class="intro">Ich interessiere mich sehr für </br> die Web-Entwicklung.</span>`,
             ]}
-            stopped={false}
             showCursor={true}
-            typeSpeed={100}
+            typeSpeed={70}
             className="hero__title"
-            startDelay={2000}
+            startDelay={4000}
             onComplete={(str) => setIsType(str.typingComplete)}
           />
 
@@ -27,13 +31,14 @@ const Hero = () => {
             buttonStyle={"btn--outline"}
             buttonSize={"btn--medium"}
             buttonVisibility={isType ? "hidden" : "visible"}
+            onClick={<Link to="footer" />}
           >
-            My Resume
+            Let´s check!
           </MyButton>
         </div>
         <div className="hero__scene-wrapper">
           <div className="imgBx">
-            <img src="./img/Alex Bagin-min.jpg" alt="Alex Bagin" />
+            <img src="../../img/AB_hero_section1.png" alt="Alex Bagin" />
           </div>
         </div>
       </div>

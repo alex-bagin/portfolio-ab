@@ -1,12 +1,3 @@
-export const links = [
-  { name: "About", path: "/about" },
-  { name: "Courses", path: "/courses" },
-  { name: "Skills", path: "/skills" },
-  { name: "Projects", path: "/projects" },
-  { name: "CV", path: "/cv" },
-  { name: "Contact", path: "/contact" },
-];
-
 export const socialsMedias = [
   {
     name: "telegram",
