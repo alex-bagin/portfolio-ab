@@ -4,7 +4,7 @@
   --c-light: #ececec;
   --c-white: #fff;
   --c-accent: #ae8bf8;
-  --c-accent-2: #910091;
+  --c-accent-btn: #9665ff28;
   --c-accent-3: #b45bb4;
   --c-gray: #f0f0f3;
   --c-red: #c04040;
@@ -124,9 +124,7 @@
 .btn--small:hover,
 .btn--medium:hover,
 .btn--large:hover {
-  background: var(--c-accent/ 0.5);
-  border: 1px solid var(--c-white);
-  background: var(--c-accent);
-  border-color: transparent;
+  background: var(--c-accent-btn);
+  border: 1px solid var(--c-accent);
   transition: var(--base-transition-duration) ease-in-out;
 }

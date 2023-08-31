@@ -5,7 +5,7 @@ const About = () => {
         <div className="title">
           <h2>Über mich</h2>
         </div>
-        <div className="content">
+        <div className="content card">
           <div className="textBox">
             <p>
               Mein Name ist Alex und ich brenne seit Langem für die Web-Entwicklung im Front- wie im

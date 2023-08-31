@@ -10,6 +10,7 @@ import Cv from "./pages/Cv/Cv.jsx";
 import Hero from "./pages/Hero.jsx";
 import Projects from "./pages/Projects.jsx";
 import SkillsDev from "./pages/SkillsDev.jsx";
+import Footer from "./components/Footer.jsx";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,7 @@ const router = createBrowserRouter([
       { path: "skills", element: <SkillsDev /> },
       { path: "cv", element: <Cv /> },
       { path: "contact", element: <Contact /> },
+      { path: "footer", element: <Footer /> },
     ],
   },
 ]);

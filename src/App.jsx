@@ -10,6 +10,7 @@ import Cv from "./pages/Cv/Cv";
 import Contact from "./pages/Contact";
 import * as Scroll from "react-scroll";
 import Footer from "./components/Footer";
+import MyForm from "./components/UI/form/MyForm";
 
 function App() {
   const Element = Scroll.Element;
@@ -46,11 +47,11 @@ function App() {
             <Element name="about">
               <About />
             </Element>
-            <Element name="courses">
-              <Courses />
-            </Element>
             <Element name="skills">
               <SkillsDev />
+            </Element>
+            <Element name="courses">
+              <Courses />
             </Element>
             <Element name="projects">
               <Projects />
@@ -64,7 +65,9 @@ function App() {
           </div>
         </main>
         <footer className="footer">
-          <Footer />
+          <Element name="footer">
+            <Footer />
+          </Element>
         </footer>
       </div>
     </ThemeContext.Provider>

@@ -10,7 +10,7 @@ const Courses = () => {
           </p>
         </div>
         <div className="courses__content">
-          <div className="courses__content--contentBox">
+          <div className="courses__content--contentBox card">
             <img src="./img/icon6.png" />
             <h2>Web Devolopment</h2>
             <p>

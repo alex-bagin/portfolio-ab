@@ -3,7 +3,7 @@ const SkillsDev = () => {
     <section className="skills-dev section" id="skills-dev">
       <div className="skills-dev__inner container">
         <div className="title">
-          <h2>Testimonials</h2>
+          <h2>Skills</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi veritatis perferendis
             consectetur

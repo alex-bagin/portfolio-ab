@@ -1,9 +1,7 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../context";
-import ThemeSwtich from "./UI/ThemeSwitch/ThemeSwitch";
-import { NavLink } from "react-router-dom";
-import MyButton from "./UI/button/MyButton";
 import * as Scroll from "react-scroll";
+import Switch from "./UI/Switch/Switch";
 
 const Header = () => {
   const Link = Scroll.Link;
@@ -61,23 +59,10 @@ const Header = () => {
                     onClick={closeMobile}
                     spy={true}
                     smooth={true}
-                    offset={-50}
+                    offset={-60}
                     duration={500}
                   >
-                    About
-                  </Link>
-                </li>
-                <li className="header__menu-item">
-                  <Link
-                    activeClass="active"
-                    to="courses"
-                    onClick={closeMobile}
-                    spy={true}
-                    smooth={true}
-                    offset={-50}
-                    duration={500}
-                  >
-                    Courses
+                    Über mich
                   </Link>
                 </li>
                 <li className="header__menu-item">
@@ -87,10 +72,23 @@ const Header = () => {
                     onClick={closeMobile}
                     spy={true}
                     smooth={true}
-                    offset={-50}
+                    offset={-60}
                     duration={500}
                   >
                     Skills
+                  </Link>
+                </li>
+                <li className="header__menu-item">
+                  <Link
+                    activeClass="active"
+                    to="courses"
+                    onClick={closeMobile}
+                    spy={true}
+                    smooth={true}
+                    offset={-60}
+                    duration={500}
+                  >
+                    Kurse
                   </Link>
                 </li>
                 <li className="header__menu-item">
@@ -100,10 +98,10 @@ const Header = () => {
                     onClick={closeMobile}
                     spy={true}
                     smooth={true}
-                    offset={-50}
+                    offset={-60}
                     duration={500}
                   >
-                    Projects
+                    Portfolio
                   </Link>
                 </li>
                 <li className="header__menu-item">
@@ -113,7 +111,7 @@ const Header = () => {
                     onClick={closeMobile}
                     spy={true}
                     smooth={true}
-                    offset={-50}
+                    offset={-60}
                     duration={500}
                   >
                     CV
@@ -125,23 +123,19 @@ const Header = () => {
                     onClick={closeMobile}
                     spy={true}
                     smooth={true}
-                    offset={-50}
+                    offset={-60}
                     duration={500}
                   >
-                    Contact
+                    Kontakt
                   </Link>
                 </li>
               </ul>
             </nav>
-
-            <MyButton buttonStyle={"btn--outline"} onClick={closeMobile}>
-              SIGN UP
-            </MyButton>
           </>
         )}
-        <span className="themeSwitch">
-          <ThemeSwtich isDark={theme} setIsDark={setTheme} />
-        </span>
+        <div>
+          <Switch isDark={theme} setIsDark={setTheme} />
+        </div>
         {button && (
           <span
             onClick={clickHandler}
@@ -167,23 +161,10 @@ const Header = () => {
                     onClick={closeMobile}
                     spy={true}
                     smooth={true}
-                    offset={-50}
+                    offset={-60}
                     duration={500}
                   >
-                    About
-                  </Link>
-                </li>
-                <li className="mobile-menu__navigation-item">
-                  <Link
-                    activeClass="active"
-                    to="courses"
-                    onClick={closeMobile}
-                    spy={true}
-                    smooth={true}
-                    offset={-50}
-                    duration={500}
-                  >
-                    Courses
+                    Über mich
                   </Link>
                 </li>
                 <li className="mobile-menu__navigation-item">
@@ -193,10 +174,23 @@ const Header = () => {
                     onClick={closeMobile}
                     spy={true}
                     smooth={true}
-                    offset={-50}
+                    offset={-60}
                     duration={500}
                   >
                     Skills
+                  </Link>
+                </li>
+                <li className="mobile-menu__navigation-item">
+                  <Link
+                    activeClass="active"
+                    to="courses"
+                    onClick={closeMobile}
+                    spy={true}
+                    smooth={true}
+                    offset={-60}
+                    duration={500}
+                  >
+                    Kurse
                   </Link>
                 </li>
                 <li className="mobile-menu__navigation-item">
@@ -206,10 +200,10 @@ const Header = () => {
                     onClick={closeMobile}
                     spy={true}
                     smooth={true}
-                    offset={-50}
+                    offset={-60}
                     duration={500}
                   >
-                    Projects
+                    Portfolio
                   </Link>
                 </li>
                 <li className="mobile-menu__navigation-item">
@@ -219,7 +213,7 @@ const Header = () => {
                     onClick={closeMobile}
                     spy={true}
                     smooth={true}
-                    offset={-50}
+                    offset={-60}
                     duration={500}
                   >
                     CV
@@ -231,10 +225,10 @@ const Header = () => {
                     onClick={closeMobile}
                     spy={true}
                     smooth={true}
-                    offset={-50}
+                    offset={-60}
                     duration={500}
                   >
-                    Contact
+                    Kontakt
                   </Link>
                 </li>
               </ul>
