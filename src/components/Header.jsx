@@ -106,19 +106,6 @@ const Header = () => {
                 </li>
                 <li className="header__menu-item">
                   <Link
-                    activeClass="active"
-                    to="cv"
-                    onClick={closeMobile}
-                    spy={true}
-                    smooth={true}
-                    offset={-60}
-                    duration={500}
-                  >
-                    CV
-                  </Link>
-                </li>
-                <li className="header__menu-item">
-                  <Link
                     to="contact"
                     onClick={closeMobile}
                     spy={true}
@@ -204,19 +191,6 @@ const Header = () => {
                     duration={500}
                   >
                     Portfolio
-                  </Link>
-                </li>
-                <li className="mobile-menu__navigation-item">
-                  <Link
-                    activeClass="active"
-                    to="cv"
-                    onClick={closeMobile}
-                    spy={true}
-                    smooth={true}
-                    offset={-60}
-                    duration={500}
-                  >
-                    CV
                   </Link>
                 </li>
                 <li className="mobile-menu__navigation-item">

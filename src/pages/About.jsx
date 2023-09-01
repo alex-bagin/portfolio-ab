@@ -8,18 +8,33 @@ const About = () => {
         <div className="content card">
           <div className="textBox">
             <p>
-              Mein Name ist Alex und ich brenne seit Langem für die Web-Entwicklung im Front- wie im
-              Backend. Ca. vor zwei Jahren begann ich, mich mithilfe von Online-Kursen ins
-              responsive Webdesign einzuarbeiten. Das im Zeitalter Tablet- und Smartphone denke ich
-              besonders wichtig ist.
+              Ich habe eine langanhaltende Leidenschaft für die Webentwicklung sowohl im Frontend
+              als auch im Backend. Vor etwa zwei Jahren begann ich meine Reise im responsiven
+              Webdesign mithilfe von Online-Kursen. Ich halte diese Fähigkeit angesichts der weit
+              verbreiteten Nutzung von Tablets und Smartphones für besonders relevant.
               <br />
-              Aus diesem Grund belegte ich Weiterbildungskurse und erweitere meine Kenntnisse bis
-              heute kontinuierlich im Selbststudium mit Online-Kursen zu verschiedenen Bereichen in
-              der Webentwicklung, welche neben theoretischem Wissen auch umfangreiche Praxisanteile
-              beinhalten.
+              Seitdem habe ich kontinuierlich meine Kenntnisse erweitert. Ich habe an
+              Weiterbildungsprogrammen teilgenommen und mein Wissen durch eigenständiges Lernen mit
+              Online-Kursen in verschiedenen Bereichen der Webentwicklung vertieft. Dabei lag mir
+              nicht nur die Theorie am Herzen, sondern auch die praktische Anwendung.
               <br />
-              Im Anschluss möchte ich endlich voll durchstarten, meine Karriere als Junior Frontend
-              oder Fullstack Developer vorantreiben und das digitale Zeitalter aktiv mitgestalten!
+              Nun stehe ich an einem Wendepunkt und bin bereit, meine Karriere als Junior Frontend
+              oder Fullstack Developer in Angriff zu nehmen. Mein Ziel ist es, aktiv an der
+              Gestaltung des digitalen Zeitalters mitzuwirken und dabei meine Begeisterung voll
+              einzubringen.
+              <br />
+              In meinem Portfolio zeige ich stolz die Projekte, an denen ich gearbeitet habe. Dieses
+              Portfolio ist der Beweis für meine Fähigkeiten und meine Entwicklung als Entwickler.
+              Ich bin bereit, meine Fähigkeiten in einem beruflichen Umfeld einzusetzen und mich
+              neuen Herausforderungen zu stellen.
+              <br />
+              Während meiner Reise habe ich nicht nur technische Fähigkeiten erworben, sondern auch
+              gelernt, wie wichtig Soft Skills wie Kommunikation und Teamarbeit sind. Ich glaube
+              daran, dass diese Fähigkeiten genauso entscheidend sind wie das technische Know-how.
+              <br />
+              Meine Begeisterung für die Webentwicklung hält an, und ich bin ständig auf der Suche
+              nach neuen Wegen, um meine Fähigkeiten auszubauen. Ich bin fest entschlossen, mich
+              ständig weiterzuentwickeln und auf dem neuesten Stand der Technologie zu bleiben.
             </p>
             <br />
 
@@ -55,7 +70,7 @@ const About = () => {
               Verlauf der letzten Jahre konnte ich mir jedoch ebenso ausgeprägte Fähigkeiten im
               Programmierungsbereich aneignen und habe mich des Weiteren mit Netzwerktechnik sowie
               Datenbanksystemen beschäftigt. Besonders versiert bin ich im Umgang mit HTML und CSS
-              und ich konnte meine diesbezüglichen Fertigkeiten bereits für die Entwicklung
+              und i ch konnte meine diesbezüglichen Fertigkeiten bereits für die Entwicklung
               zahlreicher statischer Websites nutzen. Zudem kenne ich mich gut mit JavaScript- und
               ReactJS aus und verfüge über Node.js-, jQuery-, PHP- und MySQL-Kenntnisse, die es mir
               ermöglichen, auch komplexere Webentwicklungs-Projekte umzusetzen. In meiner aktuellen

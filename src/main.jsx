@@ -2,15 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App.jsx";
+import Footer from "./components/Footer.jsx";
 import "./index.css";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import Courses from "./pages/Courses.jsx";
-import Cv from "./pages/Cv/Cv.jsx";
+import Cv from "../bin/Cv/Cv.jsx";
 import Hero from "./pages/Hero.jsx";
-import Projects from "./pages/Projects.jsx";
+import Portfolio from "./pages/Portfolio.jsx";
 import SkillsDev from "./pages/SkillsDev.jsx";
-import Footer from "./components/Footer.jsx";
 
 const router = createBrowserRouter([
   {
@@ -21,9 +21,8 @@ const router = createBrowserRouter([
       { index: true, path: "hero", element: <Hero /> },
       { path: "about", element: <About /> },
       { path: "courses", element: <Courses /> },
-      { path: "projects", element: <Projects /> },
+      { path: "portfolio", element: <Portfolio /> },
       { path: "skills", element: <SkillsDev /> },
-      { path: "cv", element: <Cv /> },
       { path: "contact", element: <Contact /> },
       { path: "footer", element: <Footer /> },
     ],

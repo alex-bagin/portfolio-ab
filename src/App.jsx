@@ -1,21 +1,19 @@
 import { useEffect, useState } from "react";
-import Header from "./components/Header";
-import { ThemeContext } from "./context";
-import Hero from "./pages/Hero";
-import About from "./pages/About";
-import Courses from "./pages/Courses";
-import Projects from "./pages/Projects";
-import SkillsDev from "./pages/SkillsDev";
-import Cv from "./pages/Cv/Cv";
-import Contact from "./pages/Contact";
 import * as Scroll from "react-scroll";
 import Footer from "./components/Footer";
-import MyForm from "./components/UI/form/MyForm";
-
+import Header from "./components/Header";
+import { ThemeContext } from "./context";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Courses from "./pages/Courses";
+import Hero from "./pages/Hero";
+import Portfolio from "./pages/Portfolio";
+import SkillsDev from "./pages/SkillsDev";
 function App() {
   const Element = Scroll.Element;
   const [theme, setTheme] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
+
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY >= 1) {
@@ -53,11 +51,8 @@ function App() {
             <Element name="courses">
               <Courses />
             </Element>
-            <Element name="projects">
-              <Projects />
-            </Element>
-            <Element name="cv">
-              <Cv />
+            <Element name="portfolio">
+              <Portfolio />
             </Element>
             <Element name="contact">
               <Contact />
