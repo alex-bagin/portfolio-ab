@@ -8,6 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 bin
+Responsive_Portfolio
 node_modules
 dist
 dist-ssr
