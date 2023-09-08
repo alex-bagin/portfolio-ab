@@ -28,7 +28,13 @@ const Header = () => {
     }
   };
 
-  $.addEventListener("resize", showButton);
+  useEffect(() => {
+    showButton();
+    $.addEventListener("resize", showButton);
+    return () => {
+      $.removeEventListener("resize", showButton);
+    };
+  }, [button]);
 
   return (
     <>
@@ -36,9 +42,10 @@ const Header = () => {
         <Link
           to="hero"
           smooth={true}
-          offset={-100}
+          offset={-120}
           duration={500}
           style={{ textDecoration: "none" }}
+          onClick={closeMobile}
         >
           <div className="logo">
             <h2>
@@ -59,7 +66,7 @@ const Header = () => {
                     onClick={closeMobile}
                     spy={true}
                     smooth={true}
-                    offset={-60}
+                    offset={-50}
                     duration={500}
                   >
                     Über mich
@@ -72,7 +79,7 @@ const Header = () => {
                     onClick={closeMobile}
                     spy={true}
                     smooth={true}
-                    offset={-60}
+                    offset={-50}
                     duration={500}
                   >
                     Skills
@@ -85,7 +92,7 @@ const Header = () => {
                     onClick={closeMobile}
                     spy={true}
                     smooth={true}
-                    offset={-60}
+                    offset={-50}
                     duration={500}
                   >
                     Kurse
@@ -98,7 +105,7 @@ const Header = () => {
                     onClick={closeMobile}
                     spy={true}
                     smooth={true}
-                    offset={-60}
+                    offset={-50}
                     duration={500}
                   >
                     Portfolio
@@ -110,7 +117,7 @@ const Header = () => {
                     onClick={closeMobile}
                     spy={true}
                     smooth={true}
-                    offset={-60}
+                    offset={-50}
                     duration={500}
                   >
                     Kontakt
@@ -148,7 +155,7 @@ const Header = () => {
                     onClick={closeMobile}
                     spy={true}
                     smooth={true}
-                    offset={-60}
+                    offset={-50}
                     duration={500}
                   >
                     Über mich
@@ -161,7 +168,7 @@ const Header = () => {
                     onClick={closeMobile}
                     spy={true}
                     smooth={true}
-                    offset={-60}
+                    offset={-50}
                     duration={500}
                   >
                     Skills
@@ -174,7 +181,7 @@ const Header = () => {
                     onClick={closeMobile}
                     spy={true}
                     smooth={true}
-                    offset={-60}
+                    offset={-50}
                     duration={500}
                   >
                     Kurse
@@ -187,7 +194,7 @@ const Header = () => {
                     onClick={closeMobile}
                     spy={true}
                     smooth={true}
-                    offset={-60}
+                    offset={-50}
                     duration={500}
                   >
                     Portfolio
@@ -199,7 +206,7 @@ const Header = () => {
                     onClick={closeMobile}
                     spy={true}
                     smooth={true}
-                    offset={-60}
+                    offset={-50}
                     duration={500}
                   >
                     Kontakt

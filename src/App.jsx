@@ -9,7 +9,11 @@ import Courses from "./pages/Courses";
 import Hero from "./pages/Hero";
 import Portfolio from "./pages/Portfolio";
 import SkillsDev from "./pages/SkillsDev";
+import { motion, useScroll } from "framer-motion";
+
 function App() {
+  const { scrollYProgress } = useScroll();
+
   const Element = Scroll.Element;
   const [theme, setTheme] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -39,6 +43,7 @@ function App() {
         </header>
         <main className="content">
           <div className="content__sections">
+            <motion.div className="progress-bar" style={{ scaleX: scrollYProgress }} />
             <Element name="hero">
               <Hero />
             </Element>

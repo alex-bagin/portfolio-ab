@@ -7,11 +7,14 @@ const Footer = () => {
       <div className="footer__inner card">
         <div className="footer__body">
           <div className="footer__title h2">
-            {"Do you want to ask"}
+            {"Haben Sie noch offene Fragen?"}
             <br className="hidden-mobile" />
-            <span className="accent-color">something interesting?</span>
+            <span className="accent-color">Dann zögern Sie nicht lange!</span>
             <div className="footer__description">
-              <p>Contact me. I am in touch mon-fri form 8am to 8pm (gmt).</p>
+              <p>
+                Kontaktieren Sie mich. Ich bin Montag bis Freitag von 8:00 bis 20:00 Uhr für Sie
+                erreichbar.
+              </p>
             </div>
           </div>
         </div>

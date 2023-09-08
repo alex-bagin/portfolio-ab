@@ -5,19 +5,7 @@ import * as Scroll from "react-scroll";
 import { motion } from "framer-motion";
 
 const Hero = () => {
-  const $ = window;
   const [isType, setIsType] = useState(true);
-  const [isMobile, setIsMobile] = useState(false);
-
-  const getScreen = () => {
-    if ($.screenX <= 1024) {
-      setIsMobile(true);
-    } else {
-      setIsMobile(false);
-    }
-  };
-
-  $.addEventListener("resize", getScreen);
 
   return (
     <section className="hero section" id="hero">
@@ -32,22 +20,21 @@ const Hero = () => {
               'Hallo! <span class="intro"> mein Name ist </br>Alex Bagin.</br><span class="intro">Online beeindrucken.</span>',
               'Hallo! <span class="intro"> mein Name ist </br>Alex Bagin.',
             ]}
-            backSpeed={30}
+            backSpeed={10}
             startDelay={2000}
-            smartBackspace
             showCursor={true}
-            cursorChar={"|"}
+            cursorChar={" |"}
             typeSpeed={30}
             className="hero__title"
             onComplete={(str) => setIsType(str.typingComplete)}
           />
-          <Scroll.Link to="footer" spy={true} smooth={true} duration={500}>
+          <Scroll.Link to="portfolio" spy={true} smooth={true} duration={500} offset={-50}>
             <MyButton
               buttonStyle={"btn--outline"}
               buttonSize={"btn--medium"}
               buttonVisibility={isType ? "hidden" : "visible"}
             >
-              Let´s check!
+              Portfolio
             </MyButton>
           </Scroll.Link>
         </div>

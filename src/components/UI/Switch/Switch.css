@@ -25,7 +25,6 @@
 
 .switch-box input {
   visibility: hidden;
-  z-index: var(--layerAdminControls);
 }
 
 .switch-box input:checked + label {

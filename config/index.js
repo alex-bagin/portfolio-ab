@@ -21,3 +21,5 @@ export const socialsMedias = [
     hidden: "true",
   },
 ];
+
+export const stackItems = [];

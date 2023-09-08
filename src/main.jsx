@@ -7,7 +7,6 @@ import "./index.css";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import Courses from "./pages/Courses.jsx";
-import Cv from "../bin/Cv/Cv.jsx";
 import Hero from "./pages/Hero.jsx";
 import Portfolio from "./pages/Portfolio.jsx";
 import SkillsDev from "./pages/SkillsDev.jsx";
