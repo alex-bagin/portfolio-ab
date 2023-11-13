@@ -8,6 +8,46 @@ const About = () => {
         <div className="content card">
           <div className="textBox">
             <p>
+              Ich bin ein leidenschaftlicher Webentwickler mit Erfahrung sowohl im Frontend als auch
+              im Backend. Mein Weg in die Welt des responsiven Webdesigns begann vor zwei Jahren mit
+              Online-Kursen, und seitdem habe ich meine Kenntnisse kontinuierlich erweitert.
+            </p>
+            <br />
+            <br />
+            <b>
+              <i>Meine Vision: </i>
+            </b>
+            <br />
+            Ich strebe an, meine Karriere als Frontend- oder Fullstack-Entwickler voranzutreiben.
+            Mein Ziel ist es, innovative Anwendungen zu erstellen und meine Leidenschaft und
+            Expertise in die Gestaltung des digitalen Zeitalters einzubringen. Mein Portfolio zeigt
+            stolz die Projekte, an denen ich gearbeitet habe, und ist ein Beweis für meine
+            Fähigkeiten und Entwicklung als Entwickler.
+            <br />
+            <br />
+            <b>
+              <i>Was ich anbiete: </i>
+            </b>
+            <br />
+            Ich biete ein breites und stabiles Fundament in der Web- und Softwareentwicklung. Meine
+            Kenntnisse ergänzen sich gegenseitig und machen mich zu einem Allrounder in diesem
+            Bereich. Ich möchte in einem herausfordernden Umfeld arbeiten, mich weiterentwickeln und
+            zur Verbesserung bestehender Projekte und zur Entwicklung neuer Lösungen beitragen. Ich
+            bin motiviert, kreativ und engagiert, und meine Leidenschaft für die Webentwicklung
+            spiegelt sich in jedem meiner Projekte wider.
+            <br />
+            <br />
+            <b>
+              <i>Meine Ziele: </i>
+            </b>
+            <br />
+            Nach dem Abschluss meiner Umschulung im Winter 2022/2023 suche ich nach einer Position,
+            die meinen Fähigkeiten und Qualifikationen entspricht. Ich strebe danach, Teil eines
+            leistungsstarken Teams zu werden, mich mit Experten und Kunden auszutauschen und
+            innovative Anwendungen zu entwickeln. Ich hoffe auf eine fruchtbare Zusammenarbeit, die
+            sowohl mein zukünftiger Arbeitgeber als auch ich selbst langfristig voranbringt.
+          </div>
+          {/* <p>
               Ich habe eine langanhaltende Leidenschaft für die Webentwicklung sowohl im Frontend
               als auch im Backend. Vor etwa zwei Jahren begann ich meine Reise im responsiven
               Webdesign mithilfe von Online-Kursen. Ich halte diese Fähigkeit angesichts der weit
@@ -42,27 +82,23 @@ const About = () => {
 
             <p>
               Wie oben beschrieben, liegen meine Wurzeln im Webdesign, weshalb zu meinem Portfolio
-              u. a. mit Photoshop, Figma und WordPress gestaltete Website-Vorlagen gehören. Im
-              Verlauf der letzten Jahre konnte ich mir jedoch ebenso ausgeprägte Fähigkeiten im
-              Programmierungsbereich aneignen und habe mich des Weiteren mit Netzwerktechnik sowie
+              Figma gestaltete Website-Vorlagen gehören. Im Verlauf der letzten Jahre konnte ich mir
+              im Programmieren aneignen und habe mich des Weiteren mit Netzwerktechnik sowie
               Datenbanksystemen beschäftigt. Besonders versiert bin ich im Umgang mit HTML und CSS
               und ich konnte meine diesbezüglichen Fertigkeiten bereits für die Entwicklung
               zahlreicher statischer Websites nutzen. Zudem kenne ich mich gut mit JavaScript- und
-              ReactJS aus und verfüge über Node.js-, jQuery-, PHP- und MySQL-Kenntnisse, die es mir
-              ermöglichen, auch komplexere Webentwicklungs-Projekte umzusetzen. In meiner aktuellen
-              Umschulung setze ich mich zusätzlich mit Programmiersprachen wie C++, Java und SQL,
-              der Programmierung von Anwendungen und Apps, dem Entwurf von Datenbanken und der
-              Verbesserung kundenspezifischer Software auseinander und bin somit fachlich breit
-              aufgestellt. Doch nicht nur hervorragende IT-Kenntnisse zählen zu meinen Stärken. Ich
-              spreche außerdem fließend Russisch, kann grundlegende Englisch-Kenntnisse vorweisen
-              und habe daher die Möglichkeit, aus einem besonders großen Wissensschatz zu schöpfen
-              und international vernetzt zu agieren, wovon mein künftiger Arbeitgeber ebenso
-              profitiert wie ich selbst. Ich liebe es, mein Wissen durchgehend auszubauen und meine
-              Fähigkeiten stetig weiterzuentwickeln, und widme mich neuen Herausforderungen und
-              Aufgaben stets mit großer Motivation und Eigeninitiative, vollem Einsatz, Kreativität
-              und einem Auge für das große Ganze wie auch fürs Detail. Was ich tue, tue ich mit
-              Leidenschaft, und diese Leidenschaft spiegelt sich in jedem der von mir bearbeiteten
-              Projekte wider – darauf können Sie sich verlassen.
+              ReactJS aus und verfüge über Node.js MySQL-Kenntnisse, die es mir ermöglichen, auch
+              komplexere Webentwicklungs-Projekte umzusetzen. Doch nicht nur hervorragende
+              IT-Kenntnisse zählen zu meinen Stärken. Ich spreche außerdem fließend Russisch, kann
+              grundlegende Englisch-Kenntnisse vorweisen und habe daher die Möglichkeit, aus einem
+              besonders großen Wissensschatz zu schöpfen und international vernetzt zu agieren,
+              wovon mein künftiger Arbeitgeber ebenso profitiert wie ich selbst. Ich liebe es, mein
+              Wissen durchgehend auszubauen und meine Fähigkeiten stetig weiterzuentwickeln, und
+              widme mich neuen Herausforderungen und Aufgaben stets mit großer Motivation und
+              Eigeninitiative, vollem Einsatz, Kreativität und einem Auge für das große Ganze wie
+              auch fürs Detail. Was ich tue, tue ich mit Leidenschaft, und diese Leidenschaft
+              spiegelt sich in jedem der von mir bearbeiteten Projekte wider – darauf können Sie
+              sich verlassen.
             </p>
             <p>
               Wie oben beschrieben, liegen meine Wurzeln im Webdesign, weshalb zu meinem Portfolio
@@ -89,7 +125,7 @@ const About = () => {
               Projekte wider – darauf können Sie sich verlassen.
             </p>
             <p>
-              <strong>Hier möchte ich hin</strong>
+              <strong style={{ fontSize: "1.2em" }}>Hier möchte ich hin</strong>
             </p>
             <p>
               Wie Sie sehen, stehe ich auf einem breiten und stabilen fachlichen Fundament. Alle
@@ -107,10 +143,9 @@ const About = () => {
               Projekte beitragen sowie künftige Projekte entwickeln. Mein Wunsch ist es, mit Ihnen
               und für Ihre Kunden zukunftsweisende Applikationen zu erstellen. Ich hoffe auf eine
               fruchtbare Zusammenarbeit, die Sie und mich langfristig voranbringt.
-            </p>
-          </div>
+            </p> */}
           <div className="imgBx">
-            <img src="../../img/csm_code_javascript_49d002a67e.webp" alt="Alex Bagin" />
+            <img src="../../img/31069134_v627-aew-26-technologybackground.jpg" alt="code" />
           </div>
         </div>
       </div>

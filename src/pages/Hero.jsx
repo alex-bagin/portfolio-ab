@@ -6,24 +6,21 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   const [isType, setIsType] = useState(true);
-
   return (
     <section className="hero section" id="hero">
       <div className="hero__inner container">
         <div className="hero__body">
           <Typed
             strings={[
-              'Hallo! <span class="intro"> mein Name ist </br>Alex Bagin.',
-              'Hallo! <span class="intro"> mein Name ist </br>Alex Bagin.</br><span class="intro">Ich interessiere mich </br> sehr für die Web-Entwicklung. </span>',
-              'Hallo! <span class="intro"> mein Name ist </br>Alex Bagin.</br><span class="intro">Code schreiben.</span>',
-              'Hallo! <span class="intro"> mein Name ist </br>Alex Bagin.</br><span class="intro">Digital gestalten.</span>',
-              'Hallo! <span class="intro"> mein Name ist </br>Alex Bagin.</br><span class="intro">Online beeindrucken.</span>',
+              //   'Hallo! <span class="intro"> mein Name ist </br>Alex Bagin.',
+              //   'Hallo! <span class="intro"> mein Name ist </br>Alex Bagin.</br><span class="intro">Ich interessiere mich </br> sehr für die Web-Entwicklung. </span>',
+              //   'Hallo! <span class="intro"> mein Name ist </br>Alex Bagin.</br><span class="intro">Code schreiben.</span>',
+              //   'Hallo! <span class="intro"> mein Name ist </br>Alex Bagin.</br><span class="intro">Digital gestalten.</span>',
+              //   'Hallo! <span class="intro"> mein Name ist </br>Alex Bagin.</br><span class="intro">Online beeindrucken.</span>',
               'Hallo! <span class="intro"> mein Name ist </br>Alex Bagin.',
             ]}
             backSpeed={10}
             startDelay={2000}
-            showCursor={true}
-            cursorChar={" |"}
             typeSpeed={30}
             className="hero__title"
             onComplete={(str) => setIsType(str.typingComplete)}

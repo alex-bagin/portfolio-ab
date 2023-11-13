@@ -59,9 +59,9 @@ function App() {
             <Element name="portfolio">
               <Portfolio />
             </Element>
-            <Element name="contact">
+            {/* <Element name="contact">
               <Contact />
-            </Element>
+            </Element> */}
           </div>
         </main>
         <footer className="footer">

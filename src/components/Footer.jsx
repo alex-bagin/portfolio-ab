@@ -11,10 +11,7 @@ const Footer = () => {
             <br className="hidden-mobile" />
             <span className="accent-color">Dann zögern Sie nicht lange!</span>
             <div className="footer__description">
-              <p>
-                Kontaktieren Sie mich. Ich bin Montag bis Freitag von 8:00 bis 20:00 Uhr für Sie
-                erreichbar.
-              </p>
+              <p>Kontaktieren Sie mich gern.</p>
             </div>
           </div>
         </div>

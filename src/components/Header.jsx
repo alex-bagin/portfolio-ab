@@ -48,11 +48,11 @@ const Header = () => {
           onClick={closeMobile}
         >
           <div className="logo">
-            <h2>
+            <h3>
               <span>alex</span>
               {"  "}
               <span>bagin</span>
-            </h2>
+            </h3>
           </div>
         </Link>
         {!button && (
@@ -111,18 +111,18 @@ const Header = () => {
                     Portfolio
                   </Link>
                 </li>
-                <li className="header__menu-item">
+                {/* <li className="header__menu-item">
                   <Link
                     to="contact"
                     onClick={closeMobile}
-                    spy={true}
+                    spy={false}
                     smooth={true}
                     offset={-50}
                     duration={500}
                   >
                     Kontakt
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </nav>
           </>
@@ -200,7 +200,7 @@ const Header = () => {
                     Portfolio
                   </Link>
                 </li>
-                <li className="mobile-menu__navigation-item">
+                {/* <li className="mobile-menu__navigation-item">
                   <Link
                     to="contact"
                     onClick={closeMobile}
@@ -211,7 +211,7 @@ const Header = () => {
                   >
                     Kontakt
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

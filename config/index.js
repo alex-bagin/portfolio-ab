@@ -15,11 +15,9 @@ export const socialsMedias = [
   },
   {
     name: "telegram",
-    link: "https://telegram.org/?setln=de",
+    link: "https://t.me/alebag84",
     blank: "_blank",
     styleClass: "fa fa-brands fa-telegram",
     hidden: "true",
   },
 ];
-
-export const stackItems = [];
