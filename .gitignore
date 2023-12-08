@@ -1,5 +1,6 @@
 # Logs
 logs
+# Logs
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,12 +8,16 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Directories and files
 trash
 Responsive_Portfolio
+utils
+
+# IDE directories and files
 node_modules
 package-lock.json
-vite.config.json
-eslintrc.cjs
+vite.config.js
+.eslintrc.cjs
 dist
 dist-ssr
 *.local
