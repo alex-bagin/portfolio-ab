@@ -1,26 +1,49 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import MyButton from "../components/UI/button/MyButton";
 import Typed from "react-typed";
 import * as Scroll from "react-scroll";
-import { motion } from "framer-motion";
 
 const Hero = () => {
+  const $ = window;
   const [isType, setIsType] = useState(true);
+  const [btnSize, setBtnSize] = useState("");
+
+  const getScreenSize = () => {
+    if ($.innerWidth >= 1024) {
+      setBtnSize("btn--medium");
+    } else if ($.innerWidth >= 767) {
+      setBtnSize("btn--small");
+    }
+  };
+
+  useEffect(() => {
+    getScreenSize();
+    $.addEventListener("resize", getScreenSize);
+    return () => {
+      $.removeEventListener("resize", getScreenSize);
+    };
+  }, [btnSize]);
+
   return (
     <section className="hero section" id="hero">
       <div className="hero__inner container">
+        <div className="hero__scene-wrapper">
+          <div className="imgBx">
+            <img src="../../Scripts/static-website-animate.svg" alt="Static Website" />
+          </div>
+        </div>
         <div className="hero__body">
           <Typed
             strings={[
-              //   'Hallo! <span class="intro"> mein Name ist </br>Alex Bagin.',
-              //   'Hallo! <span class="intro"> mein Name ist </br>Alex Bagin.</br><span class="intro">Ich interessiere mich </br> sehr für die Web-Entwicklung. </span>',
-              //   'Hallo! <span class="intro"> mein Name ist </br>Alex Bagin.</br><span class="intro">Code schreiben.</span>',
-              //   'Hallo! <span class="intro"> mein Name ist </br>Alex Bagin.</br><span class="intro">Digital gestalten.</span>',
-              //   'Hallo! <span class="intro"> mein Name ist </br>Alex Bagin.</br><span class="intro">Online beeindrucken.</span>',
-              'Hallo! <span class="intro"> mein Name ist </br>Alex Bagin.',
+              '<span class="intro-1">Hallo!</span> <span class="intro-2"> Mein Name ist </br>Alex Bagin.</span>',
+              '<span class="intro-1">Hallo!</span> <span class="intro-2"> Mein Name ist </br>Alex Bagin.</br><span class="intro-2">Ich interessiere mich sehr für die Web-Entwicklung. </span>',
+              '<span class="intro-1">Hallo!</span> <span class="intro-2"> Mein Name ist </br>Alex Bagin.</br><span class="intro-2">Code schreiben.</span>',
+              '<span class="intro-1">Hallo!</span> <span class="intro-2"> Mein Name ist </br>Alex Bagin.</br><span class="intro-2">Digital gestalten.</span>',
+              '<span class="intro-1">Hallo!</span> <span class="intro-2"> Mein Name ist </br>Alex Bagin.</br><span class="intro-2">Online beeindrucken.</span>',
+              '<span class="intro-1">Hallo!</span> <span class="intro-2"> Mein Name ist </br>Alex Bagin.</span>',
             ]}
             backSpeed={10}
-            startDelay={2000}
+            startDelay={1000}
             typeSpeed={30}
             className="hero__title"
             onComplete={(str) => setIsType(str.typingComplete)}
@@ -28,27 +51,13 @@ const Hero = () => {
           <Scroll.Link to="portfolio" spy={true} smooth={true} duration={500} offset={-50}>
             <MyButton
               buttonStyle={"btn--outline"}
-              buttonSize={"btn--medium"}
+              buttonSize={btnSize}
               buttonVisibility={isType ? "hidden" : "visible"}
             >
               Portfolio
             </MyButton>
           </Scroll.Link>
         </div>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 0.8,
-            delay: 0.5,
-            ease: [0, 0.71, 0.2, 1.01],
-          }}
-          className="hero__scene-wrapper"
-        >
-          <div className="imgBx">
-            <img src="../../img/AB_hero_section1.png" alt="Alex Bagin" />
-          </div>
-        </motion.div>
       </div>
     </section>
   );

@@ -4,7 +4,7 @@
   --c-light: #ececec;
   --c-white: #fff;
   --c-accent: #ff4d00;
-  --c-accent-btn: #ff4d0068;
+  --c-accent-btn: #ff4d0048;
 
   --border-radius: 16px;
   --border-radius-2: 32px;
@@ -20,7 +20,7 @@
   --box-shadow-5: -4px -4px 12px hsla(0, 0%, 100%, 0.05), 4px 4px 12px var(--c-accent);
   --box-shadow-6: -4px -4px 12px hsla(0, 0%, 100%, 0.05), 4px 4px 20px rgba(0, 0, 0, 0.25);
   --box-shadow-inset: inset -22px -14px 14px 2px hsla(0, 0%, 100%, 0.015),
-    inset 8px 4px 20px 12px rgba(0, 0, 0, 0.8);
+    inset 8px 4px 20px 12px rgba(0, 0, 0, 0.818);
   --box-shadow-inset-transparent: inset -22px -14px 14px 2px hsla(0, 0%, 100%, 0),
     inset 8px 4px 20px 12px transparent;
   --box-shadow-inset-2: inset -2px -2px 4px hsla(0, 0%, 100%, 0.1),
@@ -67,7 +67,7 @@
   border-radius: 2px;
   letter-spacing: 0.01em;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 400;
   outline: none;
   border-radius: 5px;
   border: none;
@@ -114,8 +114,12 @@
 .btn--medium:hover,
 .btn--large:hover {
   background: var(--c-accent-btn);
-  color: var(--c-white);
-  border: 1px solid var(--c-accent);
   transition: var(--base-transition-duration);
-  box-shadow: 2px 2px 8px var(--c-accent);
+}
+
+.btn--small:active,
+.btn--medium:active,
+.btn--large:active {
+  transition: var(--base-transition-duration);
+  box-shadow: inset 0px 0px 10px hsla(0, 0%, 0%, 0.553);
 }

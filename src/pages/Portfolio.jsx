@@ -26,7 +26,7 @@ const Portfolio = () => {
       <div className="portfolio__inner container">
         <div className="title">
           <h2>Portfolio</h2>
-          <p>Meine letzte Projekte</p>
+          <p>Meine letzten Projekte</p>
         </div>
         <div className="section__body">
           <div className="portfolio">
@@ -40,10 +40,10 @@ const Portfolio = () => {
                   date={"November 2021"}
                   url={"https://alex-bagin.github.io/liqui-planner/"}
                   name={"Liqui-Planner"}
-                  descript={`Dieses Projekt zielt darauf ab, eine praktische und benutzerfreundliche Lösung für die
-                              Verwaltung von Einnahmen, Ausgaben und Bilanzen zu bieten. Es ist eine großartige
-                              Möglichkeit für Benutzer, ihre finanzielle Gesundheit im Auge zu behalten und fundierte
-                              finanzielle Entscheidungen zutreffen. Durch die Verwendung von JavaScript und CSS wird
+                  descript={`Dieses Projekt zielt darauf ab eine praktische und benutzerfreundliche Lösung für die
+                              Verwaltung von Einnahmen, Ausgaben und Bilanzen darzustellen. Es ist eine großartige
+                              Möglichkeit für Benutzer, ihren finanziellen Status im Auge zu behalten und fundierte
+                              finanzielle Entscheidungen zu treffen. Durch die Verwendung von JavaScript und CSS wird
                               eine dynamische Benutzeroberfläche geschaffen, die das Erstellen, Bearbeiten und
                               Überwachen von Finanzdaten erleichtert.`}
                   stack={[
@@ -58,11 +58,11 @@ const Portfolio = () => {
                   img1={"../../img/projects/to-do-list/to-do-list.png"}
                   img2={"../../img/projects/to-do-list/UC-bc947081-abea-491c-b7f0-34a8c8cc8eb6.jpg"}
                   date={"März 2023"}
-                  url={"https://alex-bagin.github.io/liqui-planner/"}
+                  url={"https://alex-bagin.github.io/to-do-list/"}
                   name={"To-Do-List"}
-                  descript={`Die To-Do-List-Anwendung bietet eine benutzerfreundliche Plattform zur Organisation von Aufgaben und Aufgabenlisten.
-                  Benutzer können Aufgaben hinzufügen, bearbeiten und abhaken. 
-                  Die Anwendung ermöglicht eine einfache Verwaltung und die Steigerung der Produktivität.`}
+                  descript={`Die To-Do-List-Anwendung bietet eine benutzerfreundliche Plattform zur Organisation von Aufgaben und deren Listen.
+                  Benutzer können Tasks hinzufügen, bearbeiten und abhaken. 
+                  Die Anwendung ermöglicht eine einfache Verwaltung und eine effizentere Abarbeitung und Koordination.`}
                   stack={[
                     { title: "HTML", src: "/icons/html.svg", alt: "HTML" },
                     { title: "CSS", src: "/icons/css.svg", alt: "CSS" },

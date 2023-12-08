@@ -9,7 +9,7 @@ const SkillBoxItem = (props) => {
               <div className="imgBx">
                 <img src={skill.src} />
               </div>
-              <h4 className="skills-dev__Box-h4"> {skill.name} </h4>
+              <h5 className="skills-dev__Box-h4"> {skill.name} </h5>
             </div>
             <p>{skill.description}</p>
           </div>

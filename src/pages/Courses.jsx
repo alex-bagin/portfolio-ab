@@ -6,13 +6,8 @@ const Courses = () => {
       <div className="courses__inner container">
         <div className="title">
           <h2>Besuchte Kurse</h2>
+          <p>Zuletzt besuchte Kurse zur Verbesserung meiner Fähigkeiten und Kenntnisse.</p>
         </div>
-        <p>
-          Im Laufe der Jahre habe ich einige Kursen besucht, um meine Fähigkeiten und Kenntnisse zu
-          verbessern und zu erweitern. Diese Kurse umfassen Themen wie Webentwicklung,
-          Programmierung, Design und Datenbankmanagement. Sie haben mir wertvolle Einblicke und
-          Fertigkeiten vermittelt, die ich in meinen Projekten erfolgreich einsetzen konnte.
-        </p>
         <CoursBoxItem
           courses={[
             {
@@ -41,12 +36,6 @@ const Courses = () => {
             },
             {
               name: "React Router v6",
-              src: "../../img/Kurse/React Router v6.png",
-              href: "https://reactrouter.com/en/main/start/tutorial",
-              description: ``,
-            },
-            {
-              name: "React Router v6 V2",
               src: "../../img/Kurse/React Router v6.png",
               href: "https://reactrouter.com/en/main/start/tutorial",
               description: ``,

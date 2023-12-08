@@ -5,7 +5,6 @@ import App from "./App.jsx";
 import Footer from "./components/Footer.jsx";
 import "./index.css";
 import About from "./pages/About.jsx";
-import Contact from "./pages/Contact.jsx";
 import Courses from "./pages/Courses.jsx";
 import Hero from "./pages/Hero.jsx";
 import Portfolio from "./pages/Portfolio.jsx";

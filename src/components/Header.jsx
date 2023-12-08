@@ -156,7 +156,7 @@ const Header = () => {
                     spy={true}
                     smooth={true}
                     offset={-50}
-                    duration={500}
+                    duration={3000}
                   >
                     Über mich
                   </Link>

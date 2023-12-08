@@ -7,12 +7,12 @@ const Footer = () => {
       <div className="footer__inner card">
         <div className="footer__body">
           <div className="footer__title h2">
-            {"Haben Sie noch offene Fragen?"}
+            {"Fanden Sie mein Portfolio interessant?"}
             <br className="hidden-mobile" />
-            <span className="accent-color">Dann zögern Sie nicht lange!</span>
-            <div className="footer__description">
-              <p>Kontaktieren Sie mich gern.</p>
-            </div>
+            <span className="accent-color">Dann Kontaktieren Sie mich gern!</span>
+            {/* <div className="footer__description">
+              <p>Dann Kontaktieren Sie mich gern!</p>
+            </div> */}
           </div>
         </div>
         <div className="footer__contacts">
