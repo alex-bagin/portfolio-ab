@@ -1308,6 +1308,17 @@ ul[class]:not(.ul) {
   gap: 3rem;
 }
 
+.error__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error__inner img {
+  max-height: 500px;
+}
+
 /* Responsive */
 
 @media (max-width: 1024px) {
