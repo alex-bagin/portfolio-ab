@@ -44,7 +44,7 @@ const About = () => {
             selbst langfristig voranbringt.
           </div>
           <div className="imgBx">
-            <img src="../../img/about_AB.jpg" alt="code" />
+            <img src="/src/assets/img/about_AB.jpg" alt="code" />
           </div>
         </div>
       </div>
