@@ -14,7 +14,7 @@ function App() {
   const { scrollYProgress } = useScroll();
 
   const Element = Scroll.Element;
-  const [theme, setTheme] = useState(true);
+  const [theme, setTheme] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
