@@ -13,6 +13,7 @@ Responsive_Portfolio
 utils
 
 # IDE directories and files
+.eslintrc.cjs
 node_modules
 dist
 dist-ssr
