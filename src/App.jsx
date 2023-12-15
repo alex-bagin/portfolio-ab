@@ -14,7 +14,7 @@ function App() {
   const { scrollYProgress } = useScroll();
 
   const Element = Scroll.Element;
-  const [theme, setTheme] = useState(false);
+  const [isDark, setIsDark] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -32,8 +32,8 @@ function App() {
   return (
     <ThemeContext.Provider
       value={{
-        theme,
-        setTheme,
+        isDark,
+        setIsDark,
       }}
     >
       <div className="flow-container">

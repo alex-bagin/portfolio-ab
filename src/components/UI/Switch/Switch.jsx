@@ -5,7 +5,11 @@ import Moon from "/src/assets/img/moon.svg";
 
 const Switch = ({ isDark, setIsDark, ...props }) => {
   useEffect(() => {
-    document.body.classList.toggle("light");
+    if (!isDark) {
+      document.body.className = "light";
+    } else {
+      document.body.className = "";
+    }
   }, [isDark]);
 
   return (
@@ -27,5 +31,3 @@ const Switch = ({ isDark, setIsDark, ...props }) => {
 };
 
 export default Switch;
-
-// {isDark ? <i className="fa-solid fa-sun"></i> : <i className="fa-solid fa-moon"></i>}

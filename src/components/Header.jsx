@@ -6,7 +6,7 @@ import Switch from "./UI/Switch/Switch";
 const Header = () => {
   const Link = Scroll.Link;
   const $ = window;
-  const { theme, setTheme } = useContext(ThemeContext);
+  const { isDark, setIsDark } = useContext(ThemeContext);
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(false);
   const [mobile, setMobile] = useState(false);
@@ -111,24 +111,12 @@ const Header = () => {
                     Portfolio
                   </Link>
                 </li>
-                {/* <li className="header__menu-item">
-                  <Link
-                    to="contact"
-                    onClick={closeMobile}
-                    spy={false}
-                    smooth={true}
-                    offset={-50}
-                    duration={500}
-                  >
-                    Kontakt
-                  </Link>
-                </li> */}
               </ul>
             </nav>
           </>
         )}
         <div>
-          <Switch isDark={theme} setIsDark={setTheme} />
+          <Switch isDark={isDark} setIsDark={setIsDark} />
         </div>
         {button && (
           <span
@@ -200,18 +188,6 @@ const Header = () => {
                     Portfolio
                   </Link>
                 </li>
-                {/* <li className="mobile-menu__navigation-item">
-                  <Link
-                    to="contact"
-                    onClick={closeMobile}
-                    spy={true}
-                    smooth={true}
-                    offset={-50}
-                    duration={500}
-                  >
-                    Kontakt
-                  </Link>
-                </li> */}
               </ul>
             </div>
           </div>
