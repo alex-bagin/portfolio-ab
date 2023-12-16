@@ -13,16 +13,16 @@ import Error from "./pages/Error.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/portfolio-ab",
+    path: "/portfolio-ab/",
     element: <App />,
     errorElement: <Error />,
     children: [
-      { index: true, path: "hero", element: <Hero /> },
-      { path: "about", element: <About /> },
-      { path: "courses", element: <Courses /> },
-      { path: "portfolio", element: <Portfolio /> },
-      { path: "skills", element: <SkillsDev /> },
-      { path: "footer", element: <Footer /> },
+      { index: true, path: "/portfolio-ab/hero", element: <Hero /> },
+      { path: "/portfolio-ab/about", element: <About /> },
+      { path: "/portfolio-ab/courses", element: <Courses /> },
+      { path: "/portfolio-ab/portfolio", element: <Portfolio /> },
+      { path: "/portfolio-ab/skills", element: <SkillsDev /> },
+      { path: "/portfolio-ab/footer", element: <Footer /> },
     ],
   },
 ]);
