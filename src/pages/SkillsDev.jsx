@@ -11,38 +11,38 @@ const SkillsDev = () => {
         <SkillBoxItem
           skills={[
             {
-              src: "/src/assets/img/javascript-regular.png",
+              src: "/img/javascript-regular.png",
               name: "Programmierung",
               description: `Ich erweitere meine Fähigkeiten kontinuierlich und lerne aktuell SQL, um
               Anwendungen, Apps und Datenbanken zu entwickeln und kundenspezifische Software zu
               verbessern.`,
             },
             {
-              src: "/src/assets/img/webdesign.png",
+              src: "/img/webdesign.png",
               name: "Webdesign",
               description: `Website-Vorlagen erstellen und designen mit Figma.`,
             },
             {
-              src: "/src/assets/img/landing-page.png",
+              src: "/img/landing-page.png",
               name: "Frontend",
               description: `Meine Kenntnisse in HTML, CSS, JavaScript und ReactJS haben mir ermöglicht 
               statische Webseiten zu entwickeln.`,
             },
             {
-              src: "/src/assets/img/language.png",
+              src: "/img/language.png",
               name: "Sprachen",
               description: `Neben Deutsch spreche ich fließend Russisch und verfüge über grundlegende
               Englischkenntnisse, was mir ermöglicht, international vernetzt zu agieren.`,
             },
             {
-              src: "/src/assets/img/backend-regular.png",
+              src: "/img/backend-regular.png",
               name: "Backend",
               description: `Ich verfüge über Expertise in Node.js, Express, MySQL, die es mir erlaubt 
               auch komplexe Webentwicklungsprojekte umzusetzen.`,
             },
 
             {
-              src: "/src/assets/img/soft-skill.png",
+              src: "/img/soft-skill.png",
               name: "Soft Skills",
               description: `Neben meinem technischen Know-how besitze ich auch gute Kommunikationsfähigkeiten 
               und bringe ein schnelles Auffassungsvermögen und Verständnis für Anforderungen und Lösungswünsche mit.`,

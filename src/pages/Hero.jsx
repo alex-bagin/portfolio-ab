@@ -29,7 +29,7 @@ const Hero = () => {
       <div className="hero__inner container">
         <div className="hero__scene-wrapper">
           <div className="imgBx">
-            <img src="/src/assets/Scripts/static-website-animate.svg" alt="Static Website" />
+            <img src="/Scripts/static-website-animate.svg" alt="Static Website" />
           </div>
         </div>
         <div className="hero__body">
