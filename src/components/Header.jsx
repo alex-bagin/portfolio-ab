@@ -48,11 +48,11 @@ const Header = () => {
           onClick={closeMobile}
         >
           <div className="logo">
-            <h3>
+            <h4>
               <span>alex</span>
               {"  "}
               <span>bagin</span>
-            </h3>
+            </h4>
           </div>
         </Link>
         {!button && (

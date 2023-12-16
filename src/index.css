@@ -9,7 +9,6 @@
 
 :root {
   --c-black: #130f1c;
-  /* --c-dark: #1f2133; */
   --c-dark: #151025;
   --c-light: #ececec;
   --c-white: #fff;
@@ -246,7 +245,7 @@ h6 {
   --mobileFontSize: 20px;
   display: block;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 @media (max-width: 1280px) {
@@ -281,6 +280,23 @@ h6 {
   h5,
   h6 {
     --marginBottom: 20px;
+    font-size: var(--mobileFontSize) !important;
+  }
+}
+@media (max-width: 640px) {
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    --marginBottom: 15px;
     font-size: var(--mobileFontSize) !important;
   }
 }

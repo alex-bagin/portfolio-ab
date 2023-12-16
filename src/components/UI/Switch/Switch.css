@@ -1,22 +1,26 @@
+.switch-box {
+  position: relative;
+  top: -12.5px;
+}
+
 .switch-box label {
-  width: 110px;
-  height: 45px;
+  width: 100px;
+  height: 40px;
   position: relative;
   display: flex;
   background-color: #24242424;
   border-radius: 60px;
   box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
-  z-index: var(--layerAdminControls);
   cursor: pointer;
 }
 
 .switch-box label:after {
   content: "";
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   position: absolute;
-  top: 2.5px;
-  left: 2.5px;
+  top: 5px;
+  left: 5px;
   background: linear-gradient(180deg, var(--c-accent), var(--c-accent-2));
   border-radius: 50px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
@@ -32,7 +36,7 @@
 }
 
 .switch-box input:checked + label:after {
-  left: 108px;
+  left: 95px;
   transform: translateX(-100%);
 }
 
@@ -42,9 +46,9 @@
 
 .switch-box label img {
   position: absolute;
-  width: 20px;
+  width: 15px;
   top: 12.5px;
-  z-index: var(--layerAdminControls);
+  z-index: var(--layerControls);
 }
 
 .switch-box label img.moon {
@@ -53,8 +57,7 @@
 }
 
 .switch-box label img.sun {
-  left: 78.5px;
-  fill: var(--c-accent);
+  left: 72.5px;
   transition: 0.3s;
 }
 
@@ -63,11 +66,6 @@
 }
 .switch-box input:checked + label img.moon {
   fill: var(--c-accent);
-}
-
-.switch-box {
-  position: relative;
-  top: -10px;
 }
 
 .switch-box label::-moz-focus-outer {
