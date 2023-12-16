@@ -9,13 +9,13 @@ import Courses from "./pages/Courses.jsx";
 import Hero from "./pages/Hero.jsx";
 import Portfolio from "./pages/Portfolio.jsx";
 import SkillsDev from "./pages/SkillsDev.jsx";
-// import Error from "./pages/Error.jsx";
+import Error from "./pages/Error.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/portfolio-ab/",
     element: <App />,
-    // errorElement: <Error />,
+    errorElement: <Error />,
     children: [
       { index: true, path: "hero", element: <Hero /> },
       { path: "about", element: <About /> },
