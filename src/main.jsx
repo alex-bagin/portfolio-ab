@@ -13,7 +13,7 @@ import Error from "./pages/Error.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/portfolio-ab/",
+    path: "/",
     element: <App />,
     errorElement: <Error />,
     children: [
