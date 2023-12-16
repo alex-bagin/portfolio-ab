@@ -6,7 +6,7 @@ const Error = () => {
     <section className="error" id="error">
       <div className="error__inner container">
         <img src="/src/assets/Scripts/400-error-bad-request-animate.svg" />
-        <Link to="/">
+        <Link to="/portfolio-ab">
           <MyButton
             buttonStyle={"btn--outline"}
             buttonSize={"btn--small"}
