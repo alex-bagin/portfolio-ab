@@ -874,8 +874,8 @@ body {
 
 .hero__inner .imgBx {
   position: relative;
-  height: calc(350px + 8.06854vw);
-  width: calc(350px + 8.06854vw);
+  height: calc(330px + 5.06854vw);
+  width: calc(330px + 5.06854vw);
 }
 
 .hero__inner .imgBx img {
