@@ -853,14 +853,14 @@ body {
 
 .hero__title .intro-1 {
   font-family: var(--base-font-family-title);
-  font-size: calc(25.30769px + 1.52564vw);
+  font-size: calc(22.30769px + 1.52564vw);
   color: var(--c-accent);
   font-weight: 500;
   line-height: 1.2em;
 }
 
 .hero__title .intro-2 {
-  font-size: calc(20.30769px + 1.52564vw);
+  font-size: calc(18.30769px + 1.52564vw);
   font-weight: 400;
   font-family: var(--base-font-family-title);
   color: var(--c-light);
