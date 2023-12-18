@@ -36,7 +36,7 @@ const Hero = () => {
           <Typed
             strings={[
               '<span class="intro-1">Hallo!</span> <span class="intro-2"> Mein Name ist </br>Alex Bagin.</span>',
-              '<span class="intro-1">Hallo!</span> <span class="intro-2"> Mein Name ist </br>Alex Bagin.</br><span class="intro-2">Ich interessiere mich sehr für die Web-Entwicklung. </span>',
+              '<span class="intro-1">Hallo!</span> <span class="intro-2"> Mein Name ist </br>Alex Bagin.</br><span class="intro-2">Ich interessiere mich sehr</br> für die Web-Entwicklung. </span>',
               '<span class="intro-1">Hallo!</span> <span class="intro-2"> Mein Name ist </br>Alex Bagin.</br><span class="intro-2">Code schreiben.</span>',
               '<span class="intro-1">Hallo!</span> <span class="intro-2"> Mein Name ist </br>Alex Bagin.</br><span class="intro-2">Digital gestalten.</span>',
               '<span class="intro-1">Hallo!</span> <span class="intro-2"> Mein Name ist </br>Alex Bagin.</br><span class="intro-2">Online beeindrucken.</span>',
