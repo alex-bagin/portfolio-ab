@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import "./Switch.css";
-import Sun from "/img/sun.svg";
-import Moon from "/img/moon.svg";
+import Sun from "/src/assets/sun.svg";
+import Moon from "/src/assets/moon.svg";
 
 const Switch = ({ isDark, setIsDark, ...props }) => {
   useEffect(() => {
