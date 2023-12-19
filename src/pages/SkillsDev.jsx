@@ -11,38 +11,38 @@ const SkillsDev = () => {
         <SkillBoxItem
           skills={[
             {
-              src: "/icons/javascript-regular.png",
+              src: "./icons/javascript-regular.png",
               name: "Programmierung",
               description: `Ich erweitere meine Fähigkeiten kontinuierlich und lerne aktuell SQL, um
               Anwendungen, Apps und Datenbanken zu entwickeln und kundenspezifische Software zu
               verbessern.`,
             },
             {
-              src: "/icons/webdesign.png",
+              src: "./icons/webdesign.png",
               name: "Webdesign",
               description: `Website-Vorlagen erstellen und designen mit Figma.`,
             },
             {
-              src: "/icons/landing-page.png",
+              src: "./icons/landing-page.png",
               name: "Frontend",
               description: `Meine Kenntnisse in HTML, CSS, JavaScript und ReactJS haben mir ermöglicht 
               statische Webseiten zu entwickeln.`,
             },
             {
-              src: "/icons/language.png",
+              src: "./icons/language.png",
               name: "Sprachen",
               description: `Neben Deutsch spreche ich fließend Russisch und verfüge über grundlegende
               Englischkenntnisse, was mir ermöglicht, international vernetzt zu agieren.`,
             },
             {
-              src: "/icons/backend-regular.png",
+              src: "./icons/backend-regular.png",
               name: "Backend",
               description: `Ich verfüge über Expertise in Node.js, Express, MySQL, die es mir erlaubt 
               auch komplexe Webentwicklungsprojekte umzusetzen.`,
             },
 
             {
-              src: "/icons/soft-skill.png",
+              src: "./icons/soft-skill.png",
               name: "Soft Skills",
               description: `Neben meinem technischen Know-how besitze ich auch gute Kommunikationsfähigkeiten 
               und bringe ein schnelles Auffassungsvermögen und Verständnis für Anforderungen und Lösungswünsche mit.`,
