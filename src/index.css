@@ -42,10 +42,11 @@
     inset 2px 2px 4px rgba(0, 0, 0, 0.5);
   --box-shadow-inset-2-transparent: inset -2px -2px 4px hsla(0, 0%, 100%, 0),
     inset 2px 2px 4px transparent;
-  --fancybox-opacity: 1;
+  /* --fancybox-opacity: 1;
   --fancybox-ts: 0.2s ease;
   --fancybox-bg: var(--c-overlay);
-  --fancybox-color: var(--c-light);
+  --fancybox-color: var(--c-light); */
+  --headerHeight: 112px;
   --base-transition-duration: 0.2s;
   --transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   --base-font-family: "Poppins", sans-serif;
@@ -558,6 +559,13 @@ body {
   scroll-behavior: smooth;
 }
 
+@media (max-width: 768px) {
+  body {
+    --headerHeight: 50px;
+    padding-top: var(--headerHeight);
+  }
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -822,6 +830,14 @@ body {
 .section {
   padding-bottom: var(--section-padding-y);
   padding-top: var(--section-padding-y);
+}
+
+@media (max-width: 768px) {
+  .section {
+    --section-padding-y: 20px;
+    padding-bottom: var(--section-padding-y);
+    padding-top: var(--section-padding-y);
+  }
 }
 
 .hero__inner {
@@ -1418,7 +1434,7 @@ ul[class]:not(.ul) {
 
 @media (max-width: 640px) {
   .hero__inner {
-    gap: 2rem;
+    gap: 0rem;
   }
   .courses__content {
     grid-template-columns: repeat(1, 1fr);
