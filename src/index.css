@@ -834,7 +834,7 @@ body {
 
 @media (max-width: 768px) {
   .section {
-    --section-padding-y: 20px;
+    --section-padding-y: 30px;
     padding-bottom: var(--section-padding-y);
     padding-top: var(--section-padding-y);
   }
@@ -1388,7 +1388,7 @@ ul[class]:not(.ul) {
 
 @media (max-width: 1024px) {
   .hero__body {
-    gap: 3rem;
+    gap: 2rem;
   }
   .about .content {
     flex-direction: column;
