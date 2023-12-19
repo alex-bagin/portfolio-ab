@@ -824,7 +824,13 @@ body {
 .content__sections {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
+}
+
+@media (max-width: 640px) {
+  .content__sections {
+    gap: 0;
+  }
 }
 
 .section {
