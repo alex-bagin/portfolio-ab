@@ -90,7 +90,7 @@ const Portfolio = () => {
                   //   "./img/projects/liqui-planner/UC-a0eedeb6-c4a7-46cc-82ea-2061733bc362.jpg"
                   // }
                   date={"Juni 2023"}
-                  url={"https://alex-bagin.github.io/liqui-planner/"}
+                  url={"https://alex-bagin.github.io/posts/"}
                   name={"Posts"}
                   descript={`Die App ermöglicht das Herunterladen von Posts mit Axios, 
                                 die Anzeige und Sortierung dieser Posts sowie die Erstellung eigener Beiträge. 
