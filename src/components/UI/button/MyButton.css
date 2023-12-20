@@ -85,7 +85,7 @@
   background-color: transparent;
   color: var(--c-accent);
   padding: 8px 20px;
-  border: 1px solid var(--c-accent);
+  border: 1px solid var(--c-accent-btn);
 }
 
 .hidden {

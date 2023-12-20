@@ -13,9 +13,8 @@ const SkillsDev = () => {
             {
               src: "./icons/javascript-regular.png",
               name: "Programmierung",
-              description: `Ich erweitere meine Fähigkeiten kontinuierlich und lerne aktuell SQL, um
-              Anwendungen, Apps und Datenbanken zu entwickeln und kundenspezifische Software zu
-              verbessern.`,
+              description: `Ich erweitere meine Fähigkeiten kontinuierlich und lerne aktuell TypeScript und SQL, um
+              Anwendungen, Apps und Datenbanken zu entwickeln.`,
             },
             {
               src: "./icons/webdesign.png",
@@ -26,7 +25,7 @@ const SkillsDev = () => {
               src: "./icons/landing-page.png",
               name: "Frontend",
               description: `Meine Kenntnisse in HTML, CSS, JavaScript und ReactJS haben mir ermöglicht 
-              statische Webseiten zu entwickeln.`,
+              statische Webseiten zu erstellen.`,
             },
             {
               src: "./icons/language.png",
