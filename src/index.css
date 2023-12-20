@@ -9,14 +9,13 @@
 
 :root {
   --c-black: #130f1c;
-  --c-dark: #191625;
-  --c-dark: #151127;
-  --c-dark-original: #151025;
+  --c-dark: #160b0b;
   --c-light: #ececec;
   --c-white: #fff;
   --c-accent: #ff4d00;
   --c-accent-2: #de00ff;
   --c-gray: #f0f0f3;
+  --c-card: #1c0d0d;
   --c-red: #c04040;
   --c-green: #2c922c;
   --c-error: var(--c-red);
@@ -592,7 +591,7 @@ body {
 .card {
   border-radius: var(--border-radius-2);
   padding: 40px;
-  background-color: var(--c-dark);
+  background-color: var(--c-card);
   box-shadow: var(--box-shadow-41);
 }
 
@@ -1024,12 +1023,6 @@ p {
   font-weight: 400;
 }
 
-.skills-dev__inner .skills-dev__content .skills-dev__Box {
-  background: var(--c-dark);
-  box-shadow: var(--box-shadow-41);
-  padding: 20px;
-}
-
 .skills-dev__inner .skills-dev__content .skills-dev__Box .imgBx {
   position: relative;
   width: 80px;
@@ -1102,7 +1095,7 @@ p {
 
 @media (max-width: 640px) {
   .portfolio-card__image-wrapper {
-    min-height: 250px;
+    max-height: 250px;
   }
 }
 
