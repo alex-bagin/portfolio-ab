@@ -91,6 +91,7 @@
   --c-dark: #ececec;
   --c-light: #343541;
   --c-white: #000;
+  --c-card: #ececec;
   --box-shadow-41: -8px -8px 12px hsla(0, 0%, 100%, 0.8), 8px 8px 12px rgba(0, 0, 0, 0.05);
 }
 
