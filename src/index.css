@@ -1134,18 +1134,16 @@ p {
 }
 
 .portfolio-card__date {
-  border: 1px dashed var(--c-accent);
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow-inset-2);
   color: var(--c-accent);
   display: inline-block;
-  font-weight: 400;
-  padding: 8px 16px;
+  font-size: 1.2em;
+  font-weight: 500;
+  border-bottom: 1px dashed var(--c-accent);
 }
 
 .light .portfolio-card__date {
   border: 1px solid transparent;
-  box-shadow: var(--box-shadow-inset-2);
+  border-bottom: 1px dashed var(--c-accent);
 }
 
 @media (max-width: 640px) {
@@ -1182,7 +1180,7 @@ p {
 .portfolio-card__body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 
