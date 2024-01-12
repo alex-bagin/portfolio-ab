@@ -57,7 +57,7 @@ const Header = () => {
         </Link>
         {!button && (
           <>
-            <nav className={mobile ? "header__menu hidden-mobile" : "header_menu"}>
+            <nav className={mobile ? "header__menu is-hidden" : "header_menu"}>
               <ul className="header__menu-list">
                 <li className="header__menu-item">
                   <Link
@@ -121,7 +121,7 @@ const Header = () => {
         {button && (
           <span
             onClick={clickHandler}
-            className={"header__burger-button visible-mobile burger-button toggle"}
+            className={"header__burger-button is-visible burger-button toggle"}
           >
             {!click ? (
               <i className="fa fa-solid fa-bars" aria-hidden="true" />
@@ -132,7 +132,7 @@ const Header = () => {
         )}
       </div>
       {button && (
-        <div className={!click ? "mobile-menu" : "mobile-menu visible-mobile"}>
+        <div className={!click ? "mobile-menu is-hidden" : "mobile-menu is-visible"}>
           <div className="mobile-menu__inner container">
             <div className="mobile-menu__navigation">
               <ul className="mobile-menu__navigation_list">

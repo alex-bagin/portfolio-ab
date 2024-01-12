@@ -45,18 +45,29 @@ const Hero = () => {
             backSpeed={10}
             startDelay={1000}
             typeSpeed={30}
-            className="hero__title"
+            className="hero__body--title"
             onComplete={(str) => setIsType(str.typingComplete)}
           />
-          <Scroll.Link to="portfolio" spy={true} smooth={true} duration={500} offset={-50}>
-            <MyButton
-              buttonStyle={"btn--outline"}
-              buttonSize={btnSize}
-              buttonVisibility={isType ? "hidden" : "visible"}
-            >
-              Portfolio
-            </MyButton>
-          </Scroll.Link>
+          <div className="hero__body--btns">
+            <Scroll.Link to="portfolio" spy={true} smooth={true} duration={500} offset={-50}>
+              <MyButton
+                buttonStyle={"btn--primary"}
+                buttonSize={btnSize}
+                buttonVisibility={isType ? "hidden" : "visible"}
+              >
+                Portfolio
+              </MyButton>
+            </Scroll.Link>
+            <Scroll.Link to="footer" spy={true} smooth={true} duration={500}>
+              <MyButton
+                buttonStyle={"btn--outline"}
+                buttonSize={btnSize}
+                buttonVisibility={isType ? "hidden" : "visible"}
+              >
+                Kontakt
+              </MyButton>
+            </Scroll.Link>
+          </div>
         </div>
       </div>
     </section>

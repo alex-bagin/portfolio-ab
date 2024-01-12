@@ -44,6 +44,8 @@
     inset 2px 2px 4px rgba(0, 0, 0, 0.5);
   --box-shadow-inset-2-transparent: inset -2px -2px 4px hsla(0, 0%, 100%, 0),
     inset 2px 2px 4px transparent;
+  --box-shadow-inset-3-transparent: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
   /* --fancybox-opacity: 1;
   --fancybox-ts: 0.2s ease;
   --fancybox-bg: var(--c-overlay);
@@ -711,8 +713,12 @@ body {
   align-items: center;
 }
 
-.hidden-mobile {
+.is-hidden {
   visibility: hidden;
+}
+
+.is-visible {
+  visibility: visible;
 }
 
 .header__menu-list {
@@ -761,7 +767,6 @@ body {
   position: fixed;
   width: 100%;
   z-index: var(--layerOverlay);
-  visibility: hidden;
 }
 
 .mobile-menu__navigation ul {
@@ -793,10 +798,6 @@ body {
 
 .mobile-menu__navigation_list a.pending {
   color: #0d62a7;
-}
-
-.visible-mobile {
-  visibility: visible;
 }
 
 .toggle {
@@ -876,7 +877,7 @@ body {
   gap: 5rem;
 }
 
-.hero__title .intro-1 {
+.hero__body--title .intro-1 {
   font-family: var(--base-font-family-title);
   font-size: calc(22.30769px + 1.52564vw);
   color: var(--c-accent);
@@ -884,7 +885,7 @@ body {
   line-height: 1.2em;
 }
 
-.hero__title .intro-2 {
+.hero__body--title .intro-2 {
   font-size: calc(18.30769px + 1.52564vw);
   font-weight: 400;
   font-family: var(--base-font-family-title);
@@ -895,6 +896,12 @@ body {
   font-size: calc(20.30769px + 1.02564vw);
   color: var(--c-white);
   font-weight: 200;
+}
+
+.hero__body--btns {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .hero__inner .imgBx {
@@ -1240,14 +1247,14 @@ ul[class]:not(.ul) {
 }
 .stack__item {
   --size: 64px;
-  align-items: center;
   display: flex;
+  align-items: center;
   height: var(--size);
   justify-content: center;
   width: var(--size);
   border: 1px solid transparent;
   border-radius: 50%;
-  box-shadow: var(--box-shadow-inset-2);
+  box-shadow: var(--box-shadow-inset-3-transparent);
   transition: var(--base-transition-duration);
 }
 
@@ -1330,7 +1337,6 @@ ul[class]:not(.ul) {
 .socialMedia li a {
   width: 60px;
   height: 60px;
-  background: var(--c-dark);
   display: flex;
   justify-content: center;
   align-items: center;

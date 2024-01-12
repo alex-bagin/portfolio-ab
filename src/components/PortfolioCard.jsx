@@ -1,11 +1,11 @@
 import FancyboxItem from "./FancyboxItem";
-import PortfolioCardDescript from "./PortfolioCardDescript";
+import PortfolioCardDescription from "./PortfolioCardDescription";
 
 const PortfolioCard = (props) => {
   return (
     <article className="portfolio-card card">
       <FancyboxItem {...props} />
-      <PortfolioCardDescript {...props} />
+      <PortfolioCardDescription {...props} />
     </article>
   );
 };

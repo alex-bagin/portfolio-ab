@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
+import { courses } from "../../config";
 
-const CoursBoxItem = (props) => {
-  const courses = props.courses;
+const CoursBoxItem = () => {
   return (
     <div className="courses__content">
       {courses.map((course) => (
