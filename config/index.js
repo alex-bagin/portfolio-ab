@@ -1,3 +1,37 @@
+export const skills = [
+  {
+    src: "./icons/javascript-regular.png",
+    name: "Programmierung",
+    description: `Ich erweitere kontinuierlich meine Fähigkeiten und lerne derzeit TypeScript und SQL, um Anwendungen, Apps und Datenbanken zu entwickeln.`,
+  },
+  {
+    src: "./icons/webdesign.png",
+    name: "Webdesign",
+    description: `Website-Vorlagen erstellen und designen mit Figma.`,
+  },
+  {
+    src: "./icons/landing-page.png",
+    name: "Frontend",
+    description: `Meine Kenntnisse in HTML, CSS, JavaScript, ReactJS und GSAP haben es mir ermöglicht, statische Webseiten zu erstellen.`,
+  },
+  {
+    src: "./icons/language.png",
+    name: "Sprachen",
+    description: `Neben Deutsch spreche ich fließend Russisch und habe grundlegende Englischkenntnisse. Das ermöglicht mir, international vernetzt zu agieren.`,
+  },
+  {
+    src: "./icons/backend-regular.png",
+    name: "Backend",
+    description: `Ich verfüge über Expertise in Node.js, Express und Vite, was es mir ermöglicht, auch komplexe Webentwicklungsprojekte umzusetzen.`,
+  },
+
+  {
+    src: "./icons/soft-skill.png",
+    name: "Soft Skills",
+    description: `Neben meinem technischen Know-how besitze ich auch ausgezeichnete Kommunikationsfähigkeiten sowie ein schnelles Auffassungsvermögen und Verständnis für Anforderungen und Lösungswünsche.`,
+  },
+];
+
 export const courses = [
   {
     name: "Der ultimative JavaScript Komplettkurs",

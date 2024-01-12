@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer__inner card">
         <div className="footer__body">
           <div className="footer__title h2">
-            {"Fanden Sie mein Portfolio interessant?"}
+            {"Konnte mein Portfolio Ihr Interesse wecken?"}
             <br className="hidden-mobile" />
             <span className="accent-color">Kontaktieren Sie mich gern!</span>
           </div>
