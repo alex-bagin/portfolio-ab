@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import classes from "./MyModal.module.css";
 
 const MyModal = ({ children, visible }) => {

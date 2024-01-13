@@ -1,7 +1,7 @@
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 
 const PortfolioCardDescription = (props) => {
-  const usedStack = props.stack;
   return (
     <div className="portfolio-card__body">
       <time className="portfolio-card__date">{props.date}</time>
@@ -20,7 +20,7 @@ const PortfolioCardDescription = (props) => {
       </div>
       <div className="stack">
         <ul className="stack__list flow">
-          {usedStack.map((stackItem) => (
+          {props.stack.map((stackItem) => (
             <li className="stack__item" key={stackItem.title}>
               <img
                 className="stack__image"

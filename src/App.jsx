@@ -7,7 +7,7 @@ import About from "./pages/About";
 import Courses from "./pages/Courses";
 import Hero from "./pages/Hero";
 import Portfolio from "./pages/Portfolio";
-import SkillsDev from "./pages/SkillsDev";
+import Skills from "./pages/Skills";
 import { motion, useScroll, useInView } from "framer-motion";
 
 function Section({ children }) {
@@ -73,7 +73,7 @@ function App() {
             </Section>
             <Section>
               <Element name="skills">
-                <SkillsDev />
+                <Skills />
               </Element>
             </Section>
             <Section>

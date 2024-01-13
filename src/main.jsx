@@ -8,7 +8,7 @@ import About from "./pages/About.jsx";
 import Courses from "./pages/Courses.jsx";
 import Hero from "./pages/Hero.jsx";
 import Portfolio from "./pages/Portfolio.jsx";
-import SkillsDev from "./pages/SkillsDev.jsx";
+import Skills from "./pages/Skills.jsx";
 import Error from "./pages/Error.jsx";
 
 const router = createBrowserRouter([
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
       { path: "portfolio-ab/about", element: <About /> },
       { path: "portfolio-ab/courses", element: <Courses /> },
       { path: "portfolio-ab/portfolio", element: <Portfolio /> },
-      { path: "portfolio-ab/skills", element: <SkillsDev /> },
+      { path: "portfolio-ab/skills", element: <Skills /> },
       { path: "portfolio-ab/footer", element: <Footer /> },
     ],
   },

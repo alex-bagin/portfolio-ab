@@ -27,6 +27,7 @@
     inset 2px 2px 4px transparent;
   --base-transition-duration: 2s;
   --base-font-family: "Poppins", sans-serif;
+  --base-font-family-title: "Audiowide", sans-serif;
 }
 
 .btn {
@@ -41,14 +42,14 @@
 
 .btn--primary {
   background-color: var(--c-accent);
-  font-weight: 600;
+  font-family: var(--base-font-family-title);
   color: white;
   border: 1px solid var(--c-accent);
 }
 
 .btn--outline {
   background-color: transparent;
-  font-weight: 600;
+  font-family: var(--base-font-family-title);
   color: var(--c-accent);
   border: 1px solid var(--c-accent);
 }
@@ -62,13 +63,14 @@
 }
 
 .btn--small {
-  padding: 6px 20px;
-  font-size: 16px;
+  padding: 6px 15px;
+  font-size: 14px;
+  letter-spacing: 0.05em;
 }
 .btn--medium {
-  padding: 10px 40px;
+  padding: 10px 35px;
   font-size: 18px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
 }
 
 .btn--small:hover,

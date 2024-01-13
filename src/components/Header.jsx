@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-undef */
 import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../context";
 import * as Scroll from "react-scroll";
@@ -34,7 +36,7 @@ const Header = () => {
     return () => {
       $.removeEventListener("resize", showButton);
     };
-  }, [button]);
+  }, []);
 
   return (
     <>

@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable react/prop-types */
 import { useEffect } from "react";
 import "./Switch.css";
 import Sun from "/src/assets/sun.svg";

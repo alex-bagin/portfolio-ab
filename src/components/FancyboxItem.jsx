@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 import Fancybox from "../components/Fancybox";
 
-const FancyboxItem = ({ ...props }) => {
+const FancyboxItem = (props) => {
   return (
     <Fancybox
       options={{

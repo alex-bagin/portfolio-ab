@@ -28,7 +28,7 @@ const Hero = () => {
     <section className="hero section" id="hero">
       <div className="hero__inner container">
         <div className="hero__scene-wrapper">
-          <div className="imgBx">
+          <div className="imgBox">
             <img src="./Scripts/static-website-animate.svg" alt="Static Website" />
           </div>
         </div>

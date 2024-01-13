@@ -1,7 +1,7 @@
 import SkillBoxItem from "../components/SkillBoxItem";
 import { skills } from "../../config";
 
-const SkillsDev = () => {
+const Skills = () => {
   return (
     <section className="skills-dev section" id="skills-dev">
       <div className="skills-dev__inner container">
@@ -15,4 +15,4 @@ const SkillsDev = () => {
   );
 };
 
-export default SkillsDev;
+export default Skills;

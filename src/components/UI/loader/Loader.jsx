@@ -1,4 +1,3 @@
-import React from "react";
 import classen from "./Loader.module.css";
 
 const Loader = () => {

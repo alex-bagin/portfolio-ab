@@ -904,13 +904,13 @@ body {
   width: 100%;
 }
 
-.hero__inner .imgBx {
+.hero__inner .imgBox {
   position: relative;
   height: calc(330px + 5.06854vw);
   width: calc(330px + 5.06854vw);
 }
 
-.hero__inner .imgBx img {
+.hero__inner .imgBox img {
   position: absolute;
   bottom: 0;
 }
@@ -963,11 +963,11 @@ p {
   color: var(--c-light);
 }
 
-.about .content .imgBx {
+.about .content .imgBox {
   margin-left: 40px;
 }
 
-.about .content .imgBx img {
+.about .content .imgBox img {
   max-width: 100%;
   border-radius: var(--border-radius);
   object-fit: cover;
@@ -1025,19 +1025,18 @@ p {
 .skills-dev__Box-wrapper .skills-dev__Box-h4 {
   margin-top: 1rem;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  font-family: var(--base-font-family-title);
   color: var(--c-white);
-  line-height: 1.2em;
-  font-weight: 400;
+  letter-spacing: 0.05em;
 }
 
-.skills-dev__inner .skills-dev__content .skills-dev__Box .imgBx {
+.skills-dev__inner .skills-dev__content .skills-dev__Box .imgBox {
   position: relative;
   width: 80px;
   height: 80px;
   margin-bottom: 10px;
 }
-.skills-dev__inner .skills-dev__content .imgBx img {
+.skills-dev__inner .skills-dev__content .imgBox img {
   position: absolute;
   top: 0;
   left: 0;
@@ -1143,9 +1142,9 @@ p {
 .portfolio-card__date {
   color: var(--c-accent);
   display: inline-block;
-  font-size: 1.2em;
-  font-weight: 500;
-  border-bottom: 1px dashed var(--c-accent);
+  font-size: 1em;
+  font-family: var(--base-font-family-title);
+  border-bottom: 1px solid var(--c-accent);
 }
 
 .light .portfolio-card__date {
@@ -1403,7 +1402,7 @@ ul[class]:not(.ul) {
     width: 100%;
     min-width: 100%;
   }
-  .about .content .imgBx {
+  .about .content .imgBox {
     display: flex;
     justify-content: center;
     margin-left: 0;

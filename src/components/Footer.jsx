@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { socialMedias } from "../../config";
 
 const Footer = () => {
-  const data = new Date().getFullYear();
+  const date = new Date().getFullYear();
   return (
     <div className="footer container" id="contacts">
       <div className="footer__inner card">
@@ -23,7 +23,7 @@ const Footer = () => {
               </li>
             ))}
           </ul>
-          <p>&copy; Alex Bagin, {data} </p>
+          <p>&copy; Alex Bagin, {date} </p>
         </div>
       </div>
     </div>
