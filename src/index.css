@@ -1147,11 +1147,6 @@ p {
   border-bottom: 1px solid var(--c-accent);
 }
 
-.light .portfolio-card__date {
-  border: 1px solid transparent;
-  border-bottom: 1px dashed var(--c-accent);
-}
-
 @media (max-width: 640px) {
   .portfolio-card__date {
     font-size: 0.9em;
