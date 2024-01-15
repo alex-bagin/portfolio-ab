@@ -56,7 +56,7 @@ export const projects = [
   {
     name: "Posts",
     date: "Juni 2023",
-    url: "https://alex-bagin.github.io/posts/",
+    url: "https://alex-bagin.github.io/react-fund/",
     images: {
       img1: "./img/projects/posts/posts.png",
       img2: "",
