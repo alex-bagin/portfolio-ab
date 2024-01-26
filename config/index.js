@@ -78,19 +78,24 @@ export const courses = [
     href: "https://www.udemy.com/share/102ILc3@RJfbl3GJ39P7PC5_qFikUmuVLbdJ3S_ldjigsCgDTgtKIlj_s3dxyJeMohqYVzsd0g==/",
   },
   {
-    name: "React JS фундаментальный курс от А до Я",
+    name: "ReactJS",
     src: "./img/Kurse/React JS found-course.jpeg",
     href: "https://www.youtube.com/watch?v=GNrdg3PzpJQ&list=PL6DxKON1uLOHya4bDIynPTCwZHrezUlFs",
   },
   {
-    name: "ТОП 5 REACT ХУКОВ (React hooks). Делаем свои React хуки",
+    name: "Top 5 React hooks. Erstellen eigener hooks",
     src: "./img/Kurse/top 5 react hooks.jpeg",
     href: "https://www.youtube.com/watch?v=ks8oftGP2oc&list=PL6DxKON1uLOHya4bDIynPTCwZHrezUlFs&index=2",
   },
   {
-    name: "React Router v6",
+    name: "React-Router v6",
     src: "./img/Kurse/React Router v6.png",
     href: "https://reactrouter.com/en/main/start/tutorial",
+  },
+  {
+    name: "JWT-Authorisierung NodeJS und React",
+    src: "./img/Kurse/jwt-auth.jpeg",
+    href: "https://www.youtube.com/watch?v=fN25fMQZ2v0",
   },
 ];
 
@@ -112,6 +117,7 @@ export const stackIcons = [
   { title: "Nodemon", src: "./icons/nodemon.svg", alt: "Nodemon" },
   { title: "Express", src: "./icons/express.svg", alt: "Express" },
   { title: "Sequelize", src: "./icons/sequelize.svg", alt: "Sequelize" },
+  { title: "MongoDB", src: "./icons/mongodb.svg", alt: "MongoDB" },
 ];
 
 export const socialMedias = [

@@ -9,8 +9,6 @@ lerna-debug.log*
 
 # Directories and files
 trash
-Responsive_Portfolio
-
 # IDE directories and files
 node_modules
 dist

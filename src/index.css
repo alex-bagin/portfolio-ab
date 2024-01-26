@@ -9,10 +9,10 @@
 
 :root {
   --c-black: #130f1c;
-  --c-dark: #160b0b;
+  --c-dark: #1b110a;
   --c-light: #ececec;
   --c-white: #fff;
-  --c-accent: #ff4d00;
+  --c-accent: #ff0000;
   --c-accent-2: #de00ff;
   --c-gray: #f0f0f3;
   --c-card: #1c0d0d;
@@ -581,6 +581,7 @@ body {
 }
 
 .flow-container {
+  /* background-image: url("/public/img/Portfolio_ABBG.svg"); */
   display: flex;
   flex-direction: column;
   margin: auto;

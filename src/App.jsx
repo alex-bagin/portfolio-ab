@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable react/prop-types */
 import { useEffect, useState, useRef } from "react";
 import * as Scroll from "react-scroll";
 import Footer from "./components/Footer";
