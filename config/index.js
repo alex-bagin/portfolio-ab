@@ -103,6 +103,7 @@ export const stackIcons = [
   { title: "HTML", src: "./icons/html.svg", alt: "HTML" },
   { title: "CSS", src: "./icons/css.svg", alt: "CSS" },
   { title: "JavaScript", src: "./icons/javascript.svg", alt: "JavaScript" },
+  { title: "NodeJS", src: "./icons/nodejs.svg", alt: "NodeJS" },
   { title: "Figma", src: "./icons/figma.svg", alt: "Figma" },
   { title: "Gulp", src: "./icons/gulp.svg", alt: "Gulp" },
   { title: "Postcss", src: "./icons/postcss.svg", alt: "Postcss" },
@@ -118,6 +119,11 @@ export const stackIcons = [
   { title: "Express", src: "./icons/express.svg", alt: "Express" },
   { title: "Sequelize", src: "./icons/sequelize.svg", alt: "Sequelize" },
   { title: "MongoDB", src: "./icons/mongodb.svg", alt: "MongoDB" },
+  { title: "MobX", src: "./icons/mobx.svg", alt: "MobX" },
+  { title: "Scss", src: "./icons/scss.svg", alt: "SCSS" },
+  { title: "TailwindCSS", src: "./icons/tailwindcss.svg", alt: "TailwindCSS" },
+  { title: "Handlebars", src: "./icons/handlebars.svg", alt: "Handlebars" },
+  { title: "MaterializeCSS", src: "./icons/materializecss.svg", alt: "MaterializeCSS" },
 ];
 
 export const socialMedias = [

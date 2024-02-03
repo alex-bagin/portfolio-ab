@@ -1,12 +1,7 @@
 :root {
-  --c-black: #130f1c;
-  --c-dark: #1f2133;
-  --c-light: #ececec;
-  --c-white: #fff;
-  --c-accent: #ff4d00;
-  --c-accent-btn: #ff4d003a;
-  --c-accent-btn-hover: #bc3900;
-  --c-accent-btn-active: #902b00;
+  --c-accent-btn: #ff00003a;
+  --c-accent-btn-hover: #bc0000;
+  --c-accent-btn-active: #900000;
   --c-accent-btn-focus: #ff6320;
   --box-shadow: -12px -12px 12px hsla(0, 0%, 100%, 0.32), 12px 12px 12px rgba(0, 0, 0, 0.32);
   --box-shadow-2: -4px -4px 12px hsla(0, 0%, 100%, 0.8), 4px 4px 12px #000;
@@ -38,20 +33,19 @@
   outline: none;
   border: none;
   cursor: pointer;
+  border: 1px solid var(--c-accent);
 }
 
 .btn--primary {
   background-color: var(--c-accent);
   font-family: var(--base-font-family-title);
   color: white;
-  border: 1px solid var(--c-accent);
 }
 
 .btn--outline {
   background-color: transparent;
   font-family: var(--base-font-family-title);
   color: var(--c-accent);
-  border: 1px solid var(--c-accent);
 }
 
 .hidden {
@@ -78,10 +72,12 @@
   color: white;
   background: var(--c-accent-btn-hover);
   transition: var(--base-transition-duration);
+  border: 1px solid var(--c-accent-btn-hover);
 }
 
 .btn--small:active,
 .btn--medium:active {
   background: var(--c-accent-btn-active);
   color: white;
+  border: 1px solid var(--c-accent-btn-active);
 }

@@ -23,9 +23,35 @@ export const projects = [
     ]),
   },
   {
+    name: "WebDev-Kurse Shop",
+    date: "Februar 2023",
+    url: "https://github.com/alex-bagin/webdev-course-shop.git",
+    images: {
+      img1: "./img/projects/webdev-kurse-shop/webdev-kurse-shop.png",
+      img2: "./img/projects/webdev-kurse-shop/UC-bc947081-abea-491c-b7f0-34a8c8cc8eb6.jpg",
+    },
+    description: `Der WebDev-Kurse Shop ist eine Webanwendung, die es Benutzern ermöglicht,
+                  verschiedene Webentwicklungskurse zu durchsuchen, zu kaufen und zu verwalten.
+                  Die App bietet Funktionen wie Benutzerregistrierung und -anmeldung, Administratoren
+                  können Kurse hinzufügen, ändern und löschen, während Kunden Kurse kaufen und ihre
+                  Bestellungen verwalten können. Mit einem einfachen Interface und robusten
+                  Funktionen ist der WebDev-Kurse Shop die ideale Plattform für alle, die ihre
+                  Webentwicklungsfähigkeiten verbessern möchten.`,
+    stack: filterByTitle(stackIcons, [
+      { title: "HTML", src: "./icons/html.svg", alt: "HTML" },
+      { title: "CSS", src: "./icons/css.svg", alt: "CSS" },
+      { title: "NodeJS", src: "./icons/nodejs.svg", alt: "NodeJS" },
+      { title: "Express", src: "./icons/express.svg", alt: "Express" },
+      { title: "MongoDB", src: "./icons/mongodb.svg", alt: "MongoDB" },
+      { title: "Handlebars", src: "./icons/handlebars.svg", alt: "Handlebars" },
+      { title: "MaterializeCSS", src: "./icons/materializecss.svg", alt: "MaterializeCSS" },
+      { title: "Nodemon", src: "./icons/nodemon.svg", alt: "Nodemon" },
+    ]),
+  },
+  {
     name: "To-Do-List",
     date: "März 2023",
-    url: "https://alex-bagin.github.io/to-do-list/",
+    url: "https://github.com/alex-bagin/to-do-list.git",
     images: {
       img1: "./img/projects/to-do-list/to-do-list.png",
       img2: "./img/projects/to-do-list/UC-bc947081-abea-491c-b7f0-34a8c8cc8eb6.jpg",
@@ -56,10 +82,11 @@ export const projects = [
   {
     name: "Posts",
     date: "Juni 2023",
-    url: "https://alex-bagin.github.io/react-fund/",
+    url: "https://github.com/alex-bagin/react-fund.git",
+    // url: "https://alex-bagin.github.io/posts/",
     images: {
-      img1: "./img/projects/posts/posts.png",
-      img2: "",
+      img1: "./img/projects/posts/posts1.png",
+      img2: "./img/projects/posts/posts2.png",
     },
     description: `Die App ermöglicht das Herunterladen von Posts mit Axios, 
                   die Anzeige und Sortierung dieser Posts sowie die 
@@ -69,11 +96,7 @@ export const projects = [
     stack: filterByTitle(stackIcons, [
       { title: "HTML", src: "./icons/html.svg", alt: "HTML" },
       { title: "CSS", src: "./icons/css.svg", alt: "CSS" },
-      {
-        title: "JavaScript",
-        src: "./icons/javascript.svg",
-        alt: "JavaScript",
-      },
+      { title: "NodeJS", src: "./icons/nodejs.svg", alt: "NodeJS" },
       { title: "React", src: "./icons/react.svg", alt: "React" },
       {
         title: "React-Router",
@@ -85,12 +108,12 @@ export const projects = [
     ]),
   },
   {
-    name: "JWT-Authentifizierung",
+    name: "JWT-Authorization",
     date: "Januar 2024",
-    url: "https://alex-bagin.github.io/jwt-auth/",
+    url: "https://github.com/alex-bagin/jwt-auth.git",
     images: {
-      img1: "./img/projects/posts/posts.png",
-      img2: "",
+      img1: "./img/projects/jwt-auth/jwt-auth1.1.png",
+      img2: "./img/projects/jwt-auth/jwt-auth2.1.png",
     },
     description: `Die App ermöglilcht eine robuste und sichere Benutzerauthentifizierung. 
                   Node.js bildet das Backend und React das Frontend. JSON Web Token 
@@ -102,12 +125,18 @@ export const projects = [
     stack: filterByTitle(stackIcons, [
       { title: "HTML", src: "./icons/html.svg", alt: "HTML" },
       { title: "CSS", src: "./icons/css.svg", alt: "CSS" },
-      { title: "JavaScript", src: "./icons/javascript.svg", alt: "JavaScript" },
-      { title: "React-Router", src: "./icons/react-router.svg", alt: "React-Router" },
+      { title: "TypeScript", src: "./icons/typescript.svg", alt: "TypeScript" },
       { title: "React", src: "./icons/react.svg", alt: "React" },
-      { title: "Nodemon", src: "./icons/nodemon.svg", alt: "Nodemon" },
+      { title: "React-Router", src: "./icons/react-router.svg", alt: "React-Router" },
+      { title: "TailwindCSS", src: "./icons/tailwindcss.svg", alt: "TailwindCSS" },
+      { title: "Scss", src: "./icons/scss.svg", alt: "SCSS" },
+      { title: "MobX", src: "./icons/mobx.svg", alt: "MobX" },
+      { title: "NodeJS", src: "./icons/nodejs.svg", alt: "NodeJS" },
       { title: "Express", src: "./icons/express.svg", alt: "Express" },
       { title: "MongoDB", src: "./icons/mongodb.svg", alt: "MongoDB" },
+      { title: "Nodemon", src: "./icons/nodemon.svg", alt: "Nodemon" },
+      { title: "Postcss", src: "./icons/postcss.svg", alt: "Postcss" },
+      { title: "Vite", src: "./icons/vite.svg", alt: "Vite" },
     ]),
   },
 ];
