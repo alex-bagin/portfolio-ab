@@ -9,6 +9,7 @@ const Header = () => {
   const Link = Scroll.Link;
   const $ = window;
   const { isDark, setIsDark } = useContext(ThemeContext);
+  const [icon, setIcon] = useState(false);
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(false);
   const [mobile, setMobile] = useState(false);
@@ -16,6 +17,14 @@ const Header = () => {
   const clickHandler = () => {
     setMobile(!mobile);
     setClick(!click);
+  };
+
+  const showIcon = () => {
+    if ($.innerWidth <= 786) {
+      setIcon(true);
+    } else {
+      setIcon(false);
+    }
   };
 
   const closeMobile = () => setClick(false);
@@ -37,6 +46,13 @@ const Header = () => {
       $.removeEventListener("resize", showButton);
     };
   }, []);
+  useEffect(() => {
+    showIcon();
+    $.addEventListener("resize", showIcon);
+    return () => {
+      $.removeEventListener("resize", showIcon);
+    };
+  }, []);
 
   return (
     <>
@@ -50,11 +66,13 @@ const Header = () => {
           onClick={closeMobile}
         >
           <div className="logo">
-            <h4>
-              <span>alex</span>
-              {"  "}
-              <span>bagin</span>
-            </h4>
+            {!icon ? (
+              <>
+                <span>alex</span> <span>bagin</span>
+              </>
+            ) : (
+              <img src="./icons/logo.png" alt="Logo" width="40" height="40" />
+            )}
           </div>
         </Link>
         {!button && (
@@ -134,7 +152,11 @@ const Header = () => {
         )}
       </div>
       {button && (
-        <div className={!click ? "mobile-menu is-hidden" : "mobile-menu is-visible"}>
+        <div
+          className={
+            !click ? "mobile-menu is-hidden" : "mobile-menu is-visible"
+          }
+        >
           <div className="mobile-menu__inner container">
             <div className="mobile-menu__navigation">
               <ul className="mobile-menu__navigation_list">
