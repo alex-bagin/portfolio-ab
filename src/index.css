@@ -9,13 +9,13 @@
 
 :root {
   --c-black: #130f1c;
-  --c-dark: #264653;
+  --c-dark: #161e36;
   --c-light: #ececec;
   --c-white: #fff;
-  --c-accent: #e76f51;
-  --c-accent-2: #de00ff;
+  --c-accent: #cc00ff;
+  --c-accent-2: #ff00a6;
   --c-gray: #f0f0f3;
-  --c-card: linear-gradient(to right, #264653 40%, #285161);
+  --c-card: linear-gradient(to right, #161e36 40%, #212b4b);
   --c-red: #c04040;
   --c-green: #2c922c;
   --c-error: var(--c-red);

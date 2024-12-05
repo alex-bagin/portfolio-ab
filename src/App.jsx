@@ -62,7 +62,10 @@ function App() {
         </header>
         <main className="content">
           <div className="content__sections">
-            <motion.div className="progress-bar" style={{ scaleX: scrollYProgress }} />
+            <motion.div
+              className="progress-bar"
+              style={{ scaleX: scrollYProgress }}
+            />
             <Section>
               <Element name="hero">
                 <Hero />
@@ -90,11 +93,9 @@ function App() {
             </Section>
           </div>
         </main>
-        <footer className="footer">
-          <Element name="footer">
-            <Footer />
-          </Element>
-        </footer>
+        <Element name="footer">
+          <Footer />
+        </Element>
       </div>
     </ThemeContext.Provider>
   );

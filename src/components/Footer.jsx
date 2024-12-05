@@ -4,7 +4,7 @@ import { socialMedias } from "../../config";
 const Footer = () => {
   const date = new Date().getFullYear();
   return (
-    <div className="footer container" id="contacts">
+    <footer className="footer container" id="contacts">
       <div className="footer__inner card">
         <div className="footer__body">
           <div className="footer__title h2">
@@ -18,7 +18,10 @@ const Footer = () => {
             {socialMedias.map((socialsMedia) => (
               <li key={socialsMedia.name}>
                 <Link to={socialsMedia.link} target="_blank">
-                  <i className={socialsMedia.styleClass} aria-hidden={socialsMedia.hidden}></i>
+                  <i
+                    className={socialsMedia.styleClass}
+                    aria-hidden={socialsMedia.hidden}
+                  ></i>
                 </Link>
               </li>
             ))}
@@ -26,7 +29,7 @@ const Footer = () => {
           <p>&copy; Alex Bagin, {date} </p>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
